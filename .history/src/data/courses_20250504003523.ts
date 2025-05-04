@@ -10,7 +10,7 @@ export const coursesData: CourseProps[] = [
     level: "Introdução",
     hours: 3,
     instructor: "Ana Silva",
-    prerequisites: ["Nenhum"]
+    prerequisites: ["Lógica de Programação", "Conceitos básicos de POO"]
   },
   {
     id: "typescript",
@@ -20,7 +20,7 @@ export const coursesData: CourseProps[] = [
     level: "Introdução",
     hours: 3,
     instructor: "Pedro Santos",
-    prerequisites: ["Nenhum"]
+    prerequisites: ["JavaScript básico", "HTML/CSS"]
   },
   {
     id: "go",
@@ -30,7 +30,7 @@ export const coursesData: CourseProps[] = [
     level: "Introdução",
     hours: 3,
     instructor: "Marcos Oliveira",
-    prerequisites: ["Nenhum"]
+    prerequisites: ["Programação em qualquer linguagem", "Noções de concorrência"]
   },
   {
     id: "ruby",
@@ -40,7 +40,7 @@ export const coursesData: CourseProps[] = [
     level: "Introdução",
     hours: 3,
     instructor: "Camila Ferreira",
-    prerequisites: ["Nenhum"]
+    prerequisites: ["Lógica de Programação"]
   },
   {
     id: "prolog",
@@ -50,6 +50,6 @@ export const coursesData: CourseProps[] = [
     level: "Introdução",
     hours: 3,
     instructor: "Rafael Mendes",
-    prerequisites: ["Nenhum"]
+    prerequisites: ["", "Algoritmos"]
   }
 ];

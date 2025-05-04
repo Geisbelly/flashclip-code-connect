@@ -57,5 +57,16 @@ export const scheduleData: ScheduleItemProps[] = [
     location: "Ainda não definido",
     isVirtual: false,
     instructor: "Rafael Mendes"
+  },
+  {
+    id: "s10",
+    title: "Prolog – Lógica computacional e IA simbólica",
+    courseId: "prolog",
+    date: "2025-06-07",
+    startTime: "14:00",
+    endTime: "17:00",
+    location: "Ainda não definido",
+    isVirtual: false,
+    instructor: "Rafael Mendes"
   }
 ];

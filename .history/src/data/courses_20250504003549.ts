@@ -10,7 +10,7 @@ export const coursesData: CourseProps[] = [
     level: "Introdução",
     hours: 3,
     instructor: "Ana Silva",
-    prerequisites: ["Nenhum"]
+    prerequisites: ["Lógica de Programação", "Conceitos básicos de POO"]
   },
   {
     id: "typescript",

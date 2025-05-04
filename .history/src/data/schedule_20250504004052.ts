@@ -48,7 +48,29 @@ export const scheduleData: ScheduleItemProps[] = [
     instructor: "Camila Ferreira"
   },
   {
+    id: "s8",
+    title: "Ruby – Desenvolvimento web com Ruby on Rails",
+    courseId: "ruby",
+    date: "2025-06-07",
+    startTime: "14:00",
+    endTime: "17:00",
+    location: "Ainda não definido",
+    isVirtual: false,
+    instructor: "Camila Ferreira"
+  },
+  {
     id: "s9",
+    title: "Prolog – Lógica computacional e IA simbólica",
+    courseId: "prolog",
+    date: "2025-06-07",
+    startTime: "14:00",
+    endTime: "17:00",
+    location: "Ainda não definido",
+    isVirtual: false,
+    instructor: "Rafael Mendes"
+  },
+  {
+    id: "s10",
     title: "Prolog – Lógica computacional e IA simbólica",
     courseId: "prolog",
     date: "2025-06-07",
