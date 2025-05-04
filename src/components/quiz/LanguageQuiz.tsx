@@ -263,7 +263,10 @@ const LanguageQuiz = () => {
                     <span className="text-white/80 text-sm">{course.language}</span>
                     <span className="text-tech-neon text-sm">{Math.round((coursePoints[course.id] || 0) / (15 * 3) * 100)}%</span>
                   </div>
-                  <Progress value={(coursePoints[course.id] || 0) / (15 * 3) * 100} className="h-2 bg-white/10" indicatorClassName="bg-tech-neon" />
+                  <Progress 
+                    value={(coursePoints[course.id] || 0) / (15 * 3) * 100} 
+                    className="h-2 bg-white/10" 
+                  />
                 </div>
               ))}
             </div>
@@ -292,7 +295,10 @@ const LanguageQuiz = () => {
           <span className="text-white/70 text-sm">Pergunta {currentQuestion + 1} de {questions.length}</span>
           <span className="text-tech-neon text-sm">{Math.round(getProgressPercentage())}%</span>
         </div>
-        <Progress value={getProgressPercentage()} className="h-2 bg-white/10" indicatorClassName="bg-tech-neon" />
+        <Progress 
+          value={getProgressPercentage()} 
+          className="h-2 bg-white/10" 
+        />
         <CardTitle className="mt-4 text-xl text-white">{question.text}</CardTitle>
       </CardHeader>
       <CardContent>
