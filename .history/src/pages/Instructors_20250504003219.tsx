@@ -38,7 +38,7 @@ const Instructors = () => {
         </div>
       </section>
       
-      {/* Team Values
+      Team Values
       <section className="py-20 bg-tech-blue-light/10">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle 
@@ -63,7 +63,7 @@ const Instructors = () => {
         </div>
       </section>
       
-      {/* Join CTA 
+      {/* Join CTA */}
       <section className="py-20 bg-tech-blue">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
@@ -82,7 +82,7 @@ const Instructors = () => {
             </a>
           </div>
         </div>
-      </section> */}
+      </section>
       
       <Footer />
     </>
