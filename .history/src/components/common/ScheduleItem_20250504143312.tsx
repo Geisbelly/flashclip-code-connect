@@ -26,12 +26,11 @@ const ScheduleItem: React.FC<ScheduleItemProps> = ({
   instructor
 }) => {
   // Format date for display
-  const [year, month, day] = date.split('-');
-const formattedDate = new Date(Number(year), Number(month) - 1, Number(day)).toLocaleDateString('pt-BR', {
-  day: 'numeric',
-  month: 'long',
-  year: 'numeric',
-});
+  const formattedDate = new Date(date+1).toLocaleDateString('pt-BR', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  });
   
   return (
     <Card className="border-white/10 bg-tech-blue-light/30 backdrop-blur-sm hover:border-tech-neon/30 transition-all">

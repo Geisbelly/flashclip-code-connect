@@ -21,8 +21,8 @@ const Schedule = () => {
   
   // Group schedules by date
   const schedulesByDate = scheduleData.reduce((acc: Record<string, any[]>, schedule) => {
-    const [year, month, day] = schedule.date.split('-');
-    const date = new Date(Number(year), Number(month) - 1, Number(day)+1).toISOString().split('T')[0];
+    const [year, month, day] = scheduleDat.split('-');
+    const date = new Date(Number(year), Number(month) - 1, Number(day)).toISOString().split('T')[0];
     if (!acc[date]) {
       acc[date] = [];
     }
@@ -121,14 +121,12 @@ const Schedule = () => {
               <div>
                 <h3 className="text-xl font-bold mb-4 text-white">Cursos Presenciais</h3>
                 <div className="prose prose-invert text-white/80">
-                  <p>Os cursos presenciais serão realizados no Complexo Laboratorial de Informática da Universidade Ulbra Palmas.</p>
+                  <p>Os cursos presenciais serão realizados no Complexo Laboratorial da Universidade Ulbra Palmas.</p>
                   <address className="not-italic">
                     <p className="mb-2">1501 Sul - Av. Joaquim Teotônio Segurado</p>
                     <p className="mb-2">Plano Diretor Sul</p>
-                    <p className='mb-3'>Palmas, TO - CEP 77019-900</p>
+                    <p>Palmas, TO - CEP 77019-900</p>
                   </address>
-                  <strong >Localização:</strong>
-                  <p className="mb-2">O evento acontecerá no Complexo Laboratorial de Informática, também conhecido como Engenharia de Software - Ulbra Palmas</p>
                   <iframe 
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3938.709827192027!2d-48.33775382488899!3d-10.278779389793286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x933b37f4724a1db5%3A0x50f9e5b4a7c3e082!2sEngenharia%20de%20Software%20-%20Ulbra%20Palmas!5e0!3m2!1spt-BR!2sbr!4v1714840345775!5m2!1spt-BR!2sbr"
                       width="100%" 
