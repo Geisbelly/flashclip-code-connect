@@ -3,16 +3,6 @@ import { CourseProps } from "@/components/common/CourseCard";
 
 export const coursesData: CourseProps[] = [
   {
-    id: "prolog",
-    title: "Prolog – Lógica computacional e IA simbólica",
-    language: "Prolog",
-    description: "Introdução à programação lógica e resolução de problemas complexos utilizando a linguagem Prolog.",
-    level: "Introdução",
-    hours: 3,
-    instructor: ["Geisbelly", "Levi Luz", "Maria Antônia", "Bruno"],
-    prerequisites: ["Nenhum"]
-  },
-  {
     id: "csharp",
     title: "Conheça a Liguagem C#",
     language: "C#",
@@ -51,6 +41,6 @@ export const coursesData: CourseProps[] = [
     hours: 3,
     instructor: ["Julia","Ítalo","Sergio","Hugo","Regis","Victor da M."],
     prerequisites: ["Nenhum"]
-  }
+  },
   
 ];

@@ -11,7 +11,7 @@ export const coursesData: CourseProps[] = [
     hours: 3,
     instructor: ["Geisbelly", "Levi Luz", "Maria Antônia", "Bruno"],
     prerequisites: ["Nenhum"]
-  },
+  }
   {
     id: "csharp",
     title: "Conheça a Liguagem C#",
@@ -51,6 +51,6 @@ export const coursesData: CourseProps[] = [
     hours: 3,
     instructor: ["Julia","Ítalo","Sergio","Hugo","Regis","Victor da M."],
     prerequisites: ["Nenhum"]
-  }
+  },
   
 ];
