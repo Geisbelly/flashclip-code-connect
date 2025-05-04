@@ -102,7 +102,7 @@ export default {
 						boxShadow: '0 0 10px rgba(8, 194, 238, 0.7), 0 0 20px rgba(8, 194, 238, 0.5), 0 0 30px rgba(8, 194, 238, 0.3)' 
 					},
 				'50%': { 
-						boxShadow: '0 0 15px rgba(8, 194, 238, 0.9), 0 0 30px rgba(8, 194, 238, 0.7), 0 0 50px rgba(8, 194, 238, 0.5)' 
+					boxShadow: '0 0 15px rgba(8, 194, 238, 0.9), 0 0 30px rgba(8, 194, 238, 0.7), 0 0 50px rgba(8, 194, 238, 0.5)' 
 						}
 				},
 				'flicker': {

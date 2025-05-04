@@ -66,7 +66,7 @@ export default {
 				tech: {
 					'blue': '#0A1128', 
 					'blue-light': '#173F5F',
-					'neon': '#08c2ee',
+					'neon': '#1E90FF',
 					'neon-pink': '#FF00FF',
 					'neon-green': '#00FF00',
 				}
@@ -99,11 +99,11 @@ export default {
 				},
 				'pulse-glow': {
 					'0%, 100%': { 
-						boxShadow: '0 0 10px rgba(8, 194, 238, 0.7), 0 0 20px rgba(8, 194, 238, 0.5), 0 0 30px rgba(8, 194, 238, 0.3)' 
+						boxShadow: '0 0 10px rgba(0, 255, 255, 0.7), 0 0 20px rgba(0, 255, 255, 0.5), 0 0 30px rgba(0, 255, 255, 0.3)' 
 					},
-				'50%': { 
-						boxShadow: '0 0 15px rgba(8, 194, 238, 0.9), 0 0 30px rgba(8, 194, 238, 0.7), 0 0 50px rgba(8, 194, 238, 0.5)' 
-						}
+					'50%': { 
+						boxShadow: '0 0 15px rgba(0, 255, 255, 0.9), 0 0 30px rgba(0, 255, 255, 0.7), 0 0 50px rgba(0, 255, 255, 0.5)' 
+					}
 				},
 				'flicker': {
 					'0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100%': {

@@ -39,13 +39,12 @@ const Navbar = () => {
           
           <nav className="hidden md:flex space-x-1">
             <NavLink to="/">Home</NavLink>
+            <NavLink to="/sobre">Sobre</NavLink>
             <NavLink to="/cursos">Cursos</NavLink>
             <NavLink to="/programacao">Programação</NavLink>
             <NavLink to="/instrutores">Instrutores</NavLink>
             <NavLink to="/patrocinadores">Patrocinadores</NavLink>
             <NavLink to="/contato">Contato</NavLink>
-            <NavLink to="/sobre">Sobre</NavLink>
-            <NavLink to="/faq">FAQ</NavLink>
           </nav>
           
           <div className="flex items-center gap-4">
