@@ -43,6 +43,7 @@ const Navbar = () => {
             <NavLink to="/cursos">Cursos</NavLink>
             <NavLink to="/programacao">Programação</NavLink>
             <NavLink to="/instrutores">Instrutores</NavLink>
+            <NavLink to="/patrocinadores">Patrocinadores</NavLink>
             <NavLink to="/faq">FAQ</NavLink>
             <NavLink to="/contato">Contato</NavLink>
           </nav>
@@ -93,6 +94,7 @@ const MobileMenu = () => {
             <MobileNavLink to="/cursos" icon={<Video size={18} />}>Cursos</MobileNavLink>
             <MobileNavLink to="/programacao" icon={<Calendar size={18} />}>Programação</MobileNavLink>
             <MobileNavLink to="/instrutores" icon={<User size={18} />}>Instrutores</MobileNavLink>
+            <MobileNavLink to="/patrocinadores" icon={<div>$</div>}>Patrocinadores</MobileNavLink>
             <MobileNavLink to="/faq" icon={<div>?</div>}>FAQ</MobileNavLink>
             <MobileNavLink to="/contato" icon={<div>@</div>}>Contato</MobileNavLink>
             <Button asChild variant="outline" className="w-full mt-4 border-tech-neon text-tech-neon hover:bg-tech-neon hover:text-tech-blue">
