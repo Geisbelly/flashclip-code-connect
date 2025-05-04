@@ -7,7 +7,7 @@ export const instructorsData: InstructorProps[] = [
     name: "Geisbelly Victória",
     role: "Especialista em C# e .NET",
     bio: "Ana tem mais de 8 anos de experiência em desenvolvimento de aplicações empresariais usando C# e o ecossistema .NET.",
-    expertise: ["Prolog - Líder"],
+    expertise: ["Prolog"],
     image: "/integrantes/geis.jpeg",
     social: {
       github: "https://github.com/geisbelly",
@@ -20,7 +20,7 @@ export const instructorsData: InstructorProps[] = [
     role: "Desenvolvedor Front-end",
     bio: "Especialista em desenvolvimento web front-end, com foco em TypeScript, React e arquiteturas modernas.",
     expertise: ["Prolog"],
-    image: "/integrantes/levi.jpeg",
+    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1374&auto=format&fit=crop",
     social: {
       linkedin: "https://linkedin.com"
     }
@@ -30,7 +30,7 @@ export const instructorsData: InstructorProps[] = [
     name: "Maria Antônia Alves",
     role: "Engenheiro de Software",
     bio: "Especialista em sistemas distribuídos e computação de alta performance, com foco na linguagem Go.", 
-    expertise: ["Prolog"],
+    expertise: ["Go", "Microserviços", "Docker", "Kubernetes"],
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1470&auto=format&fit=crop",
     social: {
       github: "https://github.com",
@@ -42,7 +42,7 @@ export const instructorsData: InstructorProps[] = [
     name: "Bruno",
     role: "Desenvolvedora Ruby",
     bio: "Desenvolvedora web full-stack com especialização em Ruby on Rails e desenvolvimento ágil.",
-    expertise: ["Prolog"],
+    expertise: ["Ruby", "Rails", "TDD", "Agile"],
     image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1561&auto=format&fit=crop",
     social: {
       github: "https://github.com",

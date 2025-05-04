@@ -15,12 +15,12 @@ export const faqData: FAQItem[] = [
   {
     id: "faq3",
     question: "Receberei certificado?",
-    answer: "Sim, todos os participantes do curso receberão um certificado digital de participação."
+    answer: "Sim, todos os participantes que completarem pelo menos 75% da carga horária do curso receberão um certificado digital de participação, que poderá ser baixado diretamente do site após o evento."
   },
   {
     id: "faq4",
     question: "Preciso levar meu próprio computador?",
-    answer: "A instituição disponibiliza computadores equipados com todos os softwares necessários."
+    answer: "Para os cursos presenciais, a instituição disponibiliza computadores equipados com todos os softwares necessários. Para os cursos virtuais, você precisará de um computador com acesso à internet e os requisitos mínimos informados por email após a inscrição."
   },
   {
     id: "faq5",
@@ -33,11 +33,10 @@ export const faqData: FAQItem[] = [
     answer: "Não, todos os cursos do FlashClip são gratuitos, destinados a estudantes da instituição e comunidade externa interessada em aprender programação."
   },
   {
-    "id": "faq7",
-    "question": "Qual o nível de conhecimento necessário para participar?",
-    "answer": "Por se tratarem de cursos básicos, cujo objetivo principal é introduzir uma nova linguagem, não há exigência de conhecimento prévio."
-  }
-  ,
+    id: "faq7",
+    question: "Qual o nível de conhecimento necessário para participar?",
+    answer: "Por se tratarem de cursos bási."
+  },
   {
     id: "faq8",
     question: "Haverá material de apoio?",

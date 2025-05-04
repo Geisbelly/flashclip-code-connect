@@ -15,7 +15,7 @@ export const faqData: FAQItem[] = [
   {
     id: "faq3",
     question: "Receberei certificado?",
-    answer: "Sim, todos os participantes do curso receberão um certificado digital de participação."
+    answer: "Sim, todos os participantes do curso receberão um certificado digital de participação, que poderá ser baixado diretamente do site após o evento."
   },
   {
     id: "faq4",

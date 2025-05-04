@@ -15,12 +15,12 @@ export const faqData: FAQItem[] = [
   {
     id: "faq3",
     question: "Receberei certificado?",
-    answer: "Sim, todos os participantes do curso receberão um certificado digital de participação."
+    answer: "Sim, todos os participantes que completarem pelo menos 75% da carga horária do curso receberão um certificado digital de participação, que poderá ser baixado diretamente do site após o evento."
   },
   {
     id: "faq4",
     question: "Preciso levar meu próprio computador?",
-    answer: "A instituição disponibiliza computadores equipados com todos os softwares necessários."
+    answer: "Para os cursos presenciais, a instituição disponibiliza computadores equipados com todos os softwares necessários. Para os cursos virtuais, você precisará de um computador com acesso à internet e os requisitos mínimos informados por email após a inscrição."
   },
   {
     id: "faq5",

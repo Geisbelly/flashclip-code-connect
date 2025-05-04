@@ -10,7 +10,7 @@ export const faqData: FAQItem[] = [
   {
     id: "faq2",
     question: "Posso me inscrever em mais de um curso?",
-    answer: "Infelizmente, devido à sobreposição de horários, cada participante só pode se inscrever em um curso por edição do evento. Recomendamos escolher o que mais se alinha aos seus objetivos de aprendizado."
+    answer: "Infelizmente, devido à sobreposição de horários, cada participante só pode se inscrever em um curso. Recomendamos escolher o que mais se alinha aos seus objetivos de aprendizado."
   },
   {
     id: "faq3",

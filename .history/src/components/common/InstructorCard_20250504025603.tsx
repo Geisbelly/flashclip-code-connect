@@ -24,47 +24,59 @@ interface InstructorCardProps {
 
 const InstructorCard: React.FC<InstructorCardProps> = ({ instructor }) => {
   return (
-    <Card className="flex flex-col overflow-hidden border-white/10 bg-tech-blue-light/30 backdrop-blur-sm hover:border-tech-neon/30 transition-all">
-  <div className="relative">
-    <div className="w-full h-48 overflow-hidden">
-      <img 
-        src={instructor.image || 'https://images.unsplash.com/photo-1605379399843-5870eea9b74e?q=80&w=2400&auto=format&fit=crop'} 
-        alt={instructor.name} 
-        className="w-full h-full object-cover object-center filter grayscale hover:grayscale-0 transition-all duration-500"
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-tech-blue to-transparent"></div>
-    </div>
-    <div className="absolute bottom-4 left-4 right-4">
-      <Badge variant="outline" className="bg-tech-blue-light/80 text-white border-tech-neon/30 backdrop-blur-sm">
-        {instructor.expertise[0]}
-      </Badge>
-    </div>
-  </div>
-
-  <div className="flex-1 flex flex-col">
-    <CardHeader className="pb-2 flex-1">
-      <CardTitle className="text-xl font-bold text-white">{instructor.name}</CardTitle>
-      <CardDescription className="line-clamp-2 text-white/70">{instructor.bio}</CardDescription>
-    </CardHeader>
-
-    <CardFooter className="flex justify-between mt-auto">
-      {instructor.social && (
-        <div className="flex gap-3">
-          {instructor.social.github && (
-            <SocialLink href={instructor.social.github} icon="github" />
-          )}
-          {instructor.social.linkedin && (
-            <SocialLink href={instructor.social.linkedin} icon="linkedin" />
-          )}
-          {instructor.social.twitter && (
-            <SocialLink href={instructor.social.twitter} icon="twitter" />
-          )}
+    <Card className="overflow-hidden border-white/10 bg-tech-blue-light/30 backdrop-blur-sm hover:border-tech-neon/30 transition-all">
+      <div className="relative">
+        <div className="w-[50%] h-50 overflow-hidden">
+          <img 
+            src={instructor.image || 'https://images.unsplash.com/photo-1605379399843-5870eea9b74e?q=80&w=2400&auto=format&fit=crop'} 
+            alt={instructor.name} 
+            className="w-full h-full object-cover object-center filter grayscale hover:grayscale-0 transition-all duration-500"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-tech-blue to-transparent"></div>
         </div>
-      )}
-    </CardFooter>
-  </div>
-</Card>
-
+        <div className="absolute bottom-4 left-4 right-4">
+          <Badge variant="outline" className="bg-tech-blue-light/80 text-white border-tech-neon/30 backdrop-blur-sm">
+            {instructor.expertise[0]}
+          </Badge>
+        </div>
+      </div>
+      <CardHeader className="pb-2">
+        <CardTitle className="text-xl font-bold text-white">{instructor.name}</CardTitle>
+        <CardDescription className="line-clamp-2 text-white/70">{instructor.bio}</CardDescription>
+      </CardHeader>
+      {/* <CardContent className="pb-4">
+        <div className="space-y-3">
+          <div>
+            <p className="text-xs text-white/50 mb-2">Linguagem:</p>
+            <div className="flex flex-wrap gap-1">
+              {instructor.expertise.map((skill, index) => (
+                <Badge key={index} variant="outline" className="text-xs bg-tech-blue border-white/10">
+                  {skill}
+                </Badge>
+              ))}
+            </div>
+          </div>
+        </div>
+      </CardContent> */}
+      <CardFooter className="flex justify-between">
+        {instructor.social && (
+          <div className="flex gap-3">
+            {instructor.social.github && (
+              <SocialLink href={instructor.social.github} icon="github" />
+            )}
+            {instructor.social.linkedin && (
+              <SocialLink href={instructor.social.linkedin} icon="linkedin" />
+            )}
+            {instructor.social.twitter && (
+              <SocialLink href={instructor.social.twitter} icon="twitter" />
+            )}
+          </div>
+        )}
+        {/* <Button variant="outline" size="sm" className="border-tech-neon text-tech-neon hover:bg-tech-neon hover:text-tech-blue ml-auto">
+          Ver Perfil
+        </Button> */}
+      </CardFooter>
+    </Card>
   );
 };
 

@@ -20,7 +20,7 @@ export const instructorsData: InstructorProps[] = [
     role: "Desenvolvedor Front-end",
     bio: "Especialista em desenvolvimento web front-end, com foco em TypeScript, React e arquiteturas modernas.",
     expertise: ["Prolog"],
-    image: "/integrantes/levi.jpeg",
+    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1374&auto=format&fit=crop",
     social: {
       linkedin: "https://linkedin.com"
     }
