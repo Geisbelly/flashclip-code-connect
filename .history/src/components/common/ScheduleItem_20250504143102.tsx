@@ -48,11 +48,9 @@ const ScheduleItem: React.FC<ScheduleItemProps> = ({
         </div>
         <CardTitle className="text-xl font-bold mt-3 text-white">{title}</CardTitle>
         <div className='flex flex-row gap-2 mt-2'>
-        {instructor.map((inst, index) => (
-          <CardDescription key={index} className="text-white/70">
-            {inst}{index < instructor.length - 1 ? ',' : ''}
-          </CardDescription>
-        ))}
+        {instructor.map((inst, index) => ( index < instructor.length-1 ? (
+          <CardDescription className="text-white/70">{inst}</CardDescription>
+        ):)}
         </div>
       </CardHeader>
       <CardContent>
