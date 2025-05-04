@@ -4,7 +4,7 @@ export const eventInfo = {
   tagline: "Conecte-se ao futuro da programação",
   description: "O FlashClip é um evento imersivo focado em linguagens de programação modernas e suas aplicações práticas. Durante uma semana intensiva, você terá a oportunidade de aprender com especialistas do mercado e expandir seus horizontes na área de desenvolvimento de software.",
   targetDate: "2025-06-07T14:00:00",
-  location: "Ulbra Palmas, TO",
+  location: "Ulbra - Palmas, TO",
   goals: [
     "Proporcionar aprendizado prático em linguagens de programação modernas",
     "Conectar estudantes com profissionais experientes do mercado",

@@ -42,18 +42,18 @@ const Contact = () => {
                   <ContactInfoCard 
                     title="Endereço" 
                     content={<>
-                      Ulbra Palmas - Engenharia de Software<br />
-                      1501 Sul - Av. Joaquim Teotônio Segurado<br />
-                      Plano Diretor Sul<br />
-                      Palmas, TO - CEP 77019-900
+                      Universidade Tecnológica<br />
+                      Av. das Ciências, 1000<br />
+                      Bairro Universitário<br />
+                      Palmas, TO - CEP 01010-000
                       <iframe 
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3938.709827192027!2d-48.33775382488899!3d-10.278779389793286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x933b37f4724a1db5%3A0x50f9e5b4a7c3e082!2sEngenharia%20de%20Software%20-%20Ulbra%20Palmas!5e0!3m2!1spt-BR!2sbr!4v1714840345775!5m2!1spt-BR!2sbr"
                       width="100%" 
-                      height="200" 
+                      height="250" 
                       style={{ border: 0, borderRadius: '8px', marginTop: '1rem' }} 
                       allowFullScreen
                       loading="lazy" 
-                      title="Engenharia de Software - ULBRA Palmas"
+                      title="Mapa ULBRA"
                     />
                     </>}
                   />

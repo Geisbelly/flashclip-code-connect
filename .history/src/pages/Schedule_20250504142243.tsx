@@ -120,7 +120,7 @@ const Schedule = () => {
               <div>
                 <h3 className="text-xl font-bold mb-4 text-white">Cursos Presenciais</h3>
                 <div className="prose prose-invert text-white/80">
-                  <p>Os cursos presenciais serão realizados no Complexo Laboratorial da Universidade Ulbra Palmas.</p>
+                  <p>Os cursos presenciais serão realizados no campus principal da Universidade Tecnológica.</p>
                   <address className="not-italic">
                     <p className="mb-2">1501 Sul - Av. Joaquim Teotônio Segurado</p>
                     <p className="mb-2">Plano Diretor Sul</p>

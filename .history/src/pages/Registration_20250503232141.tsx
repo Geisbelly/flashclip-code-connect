@@ -42,6 +42,7 @@ const Registration = () => {
                   <li>Cada participante pode se inscrever em apenas um curso.</li>
                   <li>As vagas são limitadas e preenchidas por ordem de inscrição.</li>
                   <li>A confirmação da inscrição será enviada para o email informado.</li>
+                  <li>Para emissão do certificado, é necessário ter 75% de presença.</li>
                 </ul>
               </div>
               
