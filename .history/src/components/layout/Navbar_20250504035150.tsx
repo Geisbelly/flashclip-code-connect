@@ -29,9 +29,12 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center gap-2 group">
             <div className="relative w-12 h-12 flex items-center justify-center">
+              <div className="absolute inset-0 bg-[#ffffff] rounded-full opacity-20 group-hover:opacity-30 transition-opacity"></div>
+              <div >
                 <a href="/">
                   <img src="/logo.png" alt="Logo"  />
                 </a>
+              </div>
             </div>
             <span className="font-code font-bold text-white text-xl tracking-tight">
               Flash<span className="text-tech-neon">Clip</span>
