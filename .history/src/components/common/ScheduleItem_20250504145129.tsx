@@ -41,8 +41,8 @@ const formattedDate = new Date(Number(year), Number(month) - 1, Number(day)).toL
             {formattedDate}
           </Badge>
           <Badge variant={isVirtual ? 'default' : 'secondary'} className={`
-            ${isVirtual ? 'bg-tech-neon-green/20 text-tech-neon-green border-tech-neon-green/30' : 
-            'bg-tech-neon/20 text-tech-neon border-tech-neon/30'} border
+            ${isVirtual ? 'bg-tech-neon-pink/20 text-tech-neon-pink border-tech-neon-pink/30' : 
+            'bg-tech-neon-green/20 text-tech-neon-green border-tech-neon-green/30'} border
           `}>
             {isVirtual ? 'Virtual' : 'Presencial'}
           </Badge>
