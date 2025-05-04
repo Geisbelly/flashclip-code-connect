@@ -16,6 +16,7 @@ import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
 import Registration from "./pages/Registration";
 import Quiz from "./pages/Quiz";
+import Sponsors from "./pages/Sponsors";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/cursos/:id" element={<CourseDetail />} />
           <Route path="/programacao" element={<Schedule />} />
           <Route path="/instrutores" element={<Instructors />} />
+          <Route path="/patrocinadores" element={<Sponsors />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/contato" element={<Contact />} />
           <Route path="/inscricao" element={<Registration />} />

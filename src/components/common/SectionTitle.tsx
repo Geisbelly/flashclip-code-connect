@@ -5,11 +5,17 @@ interface SectionTitleProps {
   title: string;
   subtitle?: string;
   centered?: boolean;
+  className?: string;
 }
 
-const SectionTitle: React.FC<SectionTitleProps> = ({ title, subtitle, centered = true }) => {
+const SectionTitle: React.FC<SectionTitleProps> = ({ 
+  title, 
+  subtitle, 
+  centered = true, 
+  className = "mb-10"
+}) => {
   return (
-    <div className={`mb-10 ${centered ? 'text-center' : ''}`}>
+    <div className={`${className} ${centered ? 'text-center' : ''}`}>
       <h2 className="text-3xl md:text-4xl font-bold font-code">
         <span className="text-white">{title.split(' ')[0]}</span>
         <span className="text-tech-neon"> {title.split(' ').slice(1).join(' ')}</span>
