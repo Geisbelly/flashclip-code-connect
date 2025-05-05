@@ -22,8 +22,6 @@ import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import { toast } from "sonner";
 import fetchSheetCSV from '@/lib/googleServices'
-import { email2Confirmacao, sendSucessoEmail } from '@/lib/emailServices';
-
 
 const formSchema = z.object({
   fullName: z.string().min(2, { message: "O nome deve ter pelo menos 2 caracteres." }),
@@ -57,13 +55,7 @@ const RegistrationForm = () => {
     },
   });
 
-  useEffect(()=>{
-    async function teste() {
-       await email2Confirmacao()
-    }
-    teste()
-   
-  },[])
+
    
   async function emailJaCadastrado(email: string): Promise<boolean> {
     const dados = await fetchSheetCSV();
@@ -123,7 +115,7 @@ const RegistrationForm = () => {
       body: data.toString()
     }).then(console.log).catch()
     toast.message("Inscrição enviada!")
-    await sendSucessoEmail({name:values.fullName, email:values.email,curso:values.miniCourse})
+    
 
   }
   
