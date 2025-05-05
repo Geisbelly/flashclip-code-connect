@@ -22,6 +22,7 @@ import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import { toast } from "sonner";
 import fetchSheetCSV from '@/lib/googleServices'
+import { CheckCircle } from "lucide-react";
 
 const formSchema = z.object({
   fullName: z.string().min(2, { message: "O nome deve ter pelo menos 2 caracteres." }),
@@ -39,6 +40,7 @@ const formSchema = z.object({
 
 const RegistrationForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSucesso, setIsSucesso] = useState(false);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -119,6 +121,7 @@ const RegistrationForm = () => {
       }).then(console.log).catch()
       toast.message("Inscrição enviada!")
       form.reset();
+      setIsSucesso(true)
       
     }catch(e){
       toast.error("Infelizmente não foi possível enviar sua inscrição!");
@@ -129,9 +132,21 @@ const RegistrationForm = () => {
 
   }
   
+  if(isSucesso){
+    return(
+          <div className="flex flex-col items-center justify-center p-10 text-center space-y-4 bg-tech-blue-light/30 border border-white/10 rounded-lg">
+            <CheckCircle className="w-12 h-12 text-tech-neon" />
+            <h2 className="text-white text-2xl font-bold">Inscrição confirmada!</h2>
+            <p className="text-white/80">
+              Você receberá mais informações por email. Fique atento!
+            </p>
+          </div>
+    )
+  }else{
 
   return (
     <Form {...form}>
+      <h2 className="text-2xl font-bold mb-6 text-white">Formulário de Inscrição</h2>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <FormField
@@ -345,7 +360,7 @@ const RegistrationForm = () => {
         </Button>
       </form>
     </Form>
-  );
+  );}
 };
 
 export default RegistrationForm;
