@@ -186,7 +186,7 @@ const RegistrationForm = () => {
           )}
         />
 
-        {form.watch("course") === "Outro" && (
+        {form.watch("course") === "outro" && (
           <FormField
             control={form.control}
             name="customCourse"
