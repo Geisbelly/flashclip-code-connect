@@ -27,7 +27,7 @@ import { CheckCircle } from "lucide-react";
 const formSchema = z.object({
   fullName: z.string().min(2, { message: "O nome deve ter pelo menos 2 caracteres." }),
   email: z.string().email({ message: "Por favor, insira um email válido." }),
-  phone: z.string().min(14, { message: "Por favor, insira um telefone no formato correto (ex: 63 912345678)." }),
+  phone: z.string().min(11, { message: "Por favor, insira um telefone no formato correto (ex: 63 912345678)." }),
   institution: z.string().min(2, { message: "Por favor, selecione uma instituição." }),
   course: z.string().min(1, { message: "Por favor, selecione um curso." }),
   miniCourse: z.string().min(1, { message: "Por favor, selecione um minicurso." }),
@@ -154,7 +154,7 @@ const RegistrationForm = () => {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-white">Email</FormLabel>
+                <FormLabel className="text-white">Email *</FormLabel>
                 <FormControl>
                   <Input 
                     type="email" 
@@ -174,7 +174,7 @@ const RegistrationForm = () => {
             name="phone"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-white">Telefone</FormLabel>
+                <FormLabel className="text-white">Telefone *</FormLabel>
                 <FormControl>
                   <Input 
                     placeholder="(63) 90000-0000" 
@@ -287,7 +287,7 @@ const RegistrationForm = () => {
             name="customInstitution"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-white">Informe a instituição</FormLabel>
+                <FormLabel className="text-white">Informe a instituição *</FormLabel>
                 <FormControl>
                   <Input 
                     placeholder="Digite o nome da instituição" 
