@@ -75,47 +75,57 @@ const RegistrationForm = () => {
   
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    const existe = await emailJaCadastrado(values.email)
-    if(existe){
-      toast.message("Você não pode se cadastrar duas vocês com o mesmo email!")
-      return
+    try{
+      const existe = await emailJaCadastrado(values.email)
+      setIsSubmitting(true)
+      if(existe){
+        toast.message("Você não pode se cadastrar duas vocês com o mesmo email!")
+        setIsSubmitting(false)
+        return
+      }
+      const formUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSd11jX94D_SORUkxWZ6j_4kH2vCK2NmJYua-L_MKxsQUFjCeg/formResponse';
+      
+      const data = new URLSearchParams();
+      
+      data.append('entry.473763144', values.email);
+      data.append('entry.1811779468', values.fullName);
+      data.append('entry.1528936113', values.phone);
+      
+      // Curso
+      if (values.course === 'Outro') {
+        data.append('entry.142913211', '__other_option__');
+        data.append('entry.142913211.other_option_response', values.customCourse);
+      } else {
+        data.append('entry.142913211', values.course);
+      }
+      
+      // Instituição
+      if (values.institution === 'Outro') {
+        data.append('entry.601039953', '__other_option__');
+        data.append('entry.601039953.other_option_response', values.customInstitution);
+      } else {
+        data.append('entry.601039953', values.institution);
+      }
+      
+      data.append('entry.315572132', values.miniCourse);
+      
+      const retorno = await fetch(formUrl, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: data.toString()
+      }).then(console.log).catch()
+      toast.message("Inscrição enviada!")
+      form.reset();
+      
+    }catch(e){
+      toast.error("Infelizmente não foi possível enviar sua inscrição!");
+    }finally{
+      setIsSubmitting(false)
     }
-    const formUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSd11jX94D_SORUkxWZ6j_4kH2vCK2NmJYua-L_MKxsQUFjCeg/formResponse';
-    
-    const data = new URLSearchParams();
-    
-    data.append('entry.473763144', values.email);
-    data.append('entry.1811779468', values.fullName);
-    data.append('entry.1528936113', values.phone);
-    
-    // Curso
-    if (values.course === 'Outro') {
-      data.append('entry.142913211', '__other_option__');
-      data.append('entry.142913211.other_option_response', values.customCourse);
-    } else {
-      data.append('entry.142913211', values.course);
-    }
-    
-    // Instituição
-    if (values.institution === 'Outro') {
-      data.append('entry.601039953', '__other_option__');
-      data.append('entry.601039953.other_option_response', values.customInstitution);
-    } else {
-      data.append('entry.601039953', values.institution);
-    }
-    
-    data.append('entry.315572132', values.miniCourse);
-    
-    const retorno = await fetch(formUrl, {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
-      },
-      body: data.toString()
-    }).then(console.log).catch()
-    toast.message("Inscrição enviada!")
-    
+   
 
   }
   
