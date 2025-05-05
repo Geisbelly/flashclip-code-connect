@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -22,7 +22,7 @@ import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import { toast } from "sonner";
 import fetchSheetCSV from '@/lib/googleServices'
-import { sendSucessoEmail } from '@/lib/emailServices';
+import { email2Confirmacao, sendSucessoEmail } from '@/lib/emailServices';
 
 
 const formSchema = z.object({
@@ -56,6 +56,14 @@ const RegistrationForm = () => {
       acceptTerms: false,
     },
   });
+
+  useEffect(()=>{
+    async function teste() {
+       await email2Confirmacao()
+    }
+    teste()
+   
+  },[])
    
   async function emailJaCadastrado(email: string): Promise<boolean> {
     const dados = await fetchSheetCSV();
