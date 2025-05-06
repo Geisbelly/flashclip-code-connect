@@ -20,8 +20,8 @@ export const eventInfo = {
   organization: {
     name: "Departamento de Ciência da Computação - Universidade Tecnológica",
     coordinator: "Profa. Dra. Renata Campos",
-    contact: "contato@flashclip.tech",
-    website: "www.flashclip.tech"
+    contact: "contatoflashclip@gmail.com",
+    website: "flash-clip.vercel.app"
   },
   benefits: [
     "Certificado digital de participação",
