@@ -18,8 +18,8 @@ export const eventInfo = {
     "Entusiastas de programação de todos os níveis"
   ],
   organization: {
-    name: "Departamento de Ciência da Computação - Universidade Tecnológica",
-    coordinator: "Profa. Dra. Renata Campos",
+    name: "Turma Paradigmas de Linguagens de Programação - 2N|Ulbra Palmas - 2025/1 ",
+    coordinator: "Prof. Lucas Pedro Lopes Carvalho",
     contact: "contatoflashclip@gmail.com",
     website: "flash-clip.vercel.app"
   },
