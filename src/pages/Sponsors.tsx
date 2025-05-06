@@ -121,10 +121,10 @@ const Sponsors = () => {
                 Entre em contato pelo e-mail:
               </p>
               <a 
-                href="mailto:patrocinadores@flashclip.com.br" 
+                href="mailto:contatoflashclip@gmail.com" 
                 className="text-tech-neon text-lg font-code hover:underline"
               >
-                patrocinadores@flashclip.com.br
+                contatoflashclip@gmail.com
               </a>
             </div>
           </div>
