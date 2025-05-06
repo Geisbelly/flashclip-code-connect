@@ -18,7 +18,7 @@ export const eventInfo = {
     "Entusiastas de programação de todos os níveis"
   ],
   organization: {
-    name: "Turma Paradigmas de Linguagens de Programação - 2N|Ulbra Palmas - 2025/1 ",
+    name: "Turma Paradigmas de Linguagens de Programação - Ulbra Palmas",
     coordinator: "Prof. Lucas Pedro Lopes Carvalho",
     contact: "contatoflashclip@gmail.com",
     website: "flash-clip.vercel.app"
