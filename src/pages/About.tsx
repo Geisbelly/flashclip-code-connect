@@ -125,7 +125,7 @@ const About = () => {
               
               <div className="space-y-4 text-white/80">
                 <p>
-                  <strong className="text-tech-neon">Coordenação:</strong> {eventInfo.organization.coordinator}
+                  <strong className="text-tech-neon">Professor orientador:</strong> {eventInfo.organization.coordinator}
                 </p>
                 <p>
                   <strong className="text-tech-neon">Contato:</strong> {eventInfo.organization.contact}
