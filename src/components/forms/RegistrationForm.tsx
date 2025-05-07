@@ -29,10 +29,12 @@ const formSchema = z.object({
   email: z.string().email({ message: "Por favor, insira um email válido." }),
   phone: z.string().min(11, { message: "Por favor, insira um telefone no formato correto (ex: 63 912345678)." }),
   institution: z.string().min(2, { message: "Por favor, selecione uma instituição." }),
+  indicacao: z.string().min(2, { message: "Por favor, selecione um grupo." }),
   course: z.string().min(1, { message: "Por favor, selecione um curso." }),
   miniCourse: z.string().min(1, { message: "Por favor, selecione um minicurso." }),
   customCourse: z.string().optional(),
   customInstitution: z.string().optional(),
+  customIndicacao: z.string().optional(),
   acceptTerms: z.boolean().refine(val => val === true, {
     message: "Você precisa aceitar os termos e condições.",
   }),
@@ -49,6 +51,7 @@ const RegistrationForm = () => {
       email: "",
       phone: "",
       institution: "",
+      indicacao: "",
       course: "",
       miniCourse: "",
       customCourse: "",
@@ -107,6 +110,14 @@ const RegistrationForm = () => {
         data.append('entry.601039953.other_option_response', values.customInstitution);
       } else {
         data.append('entry.601039953', values.institution);
+      }
+
+      // Indicacao
+      if (values.indicacao === 'Outro') {
+        data.append('entry.1239734294', '__other_option__');
+        data.append('entry.1239734294.other_option_response', values.customIndicacao);
+      } else {
+        data.append('entry.1239734294', values.indicacao);
       }
       
       data.append('entry.315572132', values.miniCourse);
@@ -268,7 +279,7 @@ const RegistrationForm = () => {
                   <SelectItem value="ULBRA Palmas">ULBRA Palmas</SelectItem>
                   <SelectItem value="IFTO">IFTO</SelectItem>
                   <SelectItem value="UFT">UFT</SelectItem>
-                  <SelectItem value="unitins">UNITINS</SelectItem>
+                  <SelectItem value="UNITINS">UNITINS</SelectItem>
                   <SelectItem value="Unopa">UNOPA</SelectItem>
                   <SelectItem value="Catolica">Catolica</SelectItem>
                   <SelectItem value="Ulbrinha">Ulbrinha</SelectItem>
@@ -291,6 +302,52 @@ const RegistrationForm = () => {
                 <FormControl>
                   <Input 
                     placeholder="Digite o nome da instituição" 
+                    {...field} 
+                    className="bg-tech-blue-light/30 border-white/10 text-white placeholder:text-white/50 focus:border-tech-neon"
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+        )}
+
+        <FormField
+          control={form.control}
+          name="indicacao"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel className="text-white">Quem te convidou para o FlashClip? *</FormLabel>
+              <Select onValueChange={field.onChange} defaultValue={field.value}>
+                <FormControl>
+                  <SelectTrigger className="bg-tech-blue-light/30 border-white/10 text-white">
+                    <SelectValue placeholder="Selecione uma instituição" />
+                  </SelectTrigger>
+                </FormControl>
+                <SelectContent className="bg-tech-blue-light border-white/10">
+                  <SelectItem value="Grupo Prolog">Grupo Prolog</SelectItem>
+                  <SelectItem value="Grupo GO">Grupo GO</SelectItem>
+                  <SelectItem value="Grupo C#">Grupo C#</SelectItem>
+                  <SelectItem value="Grupo Ruby">Grupo Ruby</SelectItem>
+                  <SelectItem value="Grupo TypeScript">Grupo TypeScript</SelectItem>
+                  <SelectItem value="Outro">Outro</SelectItem>
+                </SelectContent>
+              </Select>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        {form.watch("indicacao") === "Outro" && (
+          <FormField
+            control={form.control}
+            name="customIndicacao"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel className="text-white">Informe a instituição *</FormLabel>
+                <FormControl>
+                  <Input 
+                    placeholder="Digite o nome de quem te indicou" 
                     {...field} 
                     className="bg-tech-blue-light/30 border-white/10 text-white placeholder:text-white/50 focus:border-tech-neon"
                   />

@@ -57,33 +57,34 @@ const Index = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle 
             title="Por que participar" 
-            subtitle="O FlashClip oferece uma experiência imersiva no mundo da programação com profissionais experientes do mercado."
+            subtitle="Introdução prática a linguagens de programação, com seu primeiro contato no mundo do código."
           />
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
             <FeatureCard
               icon={<Calendar className="w-8 h-8 text-tech-neon" />}
-              title="5 Dias Intensivos"
-              description="Cursos compactos e focados para maximizar seu aprendizado em pouco tempo."
+              title="Apenas 3 horas"
+              description="Cursos rápidos e focados para aprendizado eficiente."
             />
             <FeatureCard
               icon={<Video className="w-8 h-8 text-tech-neon" />}
-              title="Cursos Especializados"
-              description="5 linguagens modernas com aplicações práticas para o mercado atual."
+              title="Playground"
+              description="Se divirta com 5 linguagens desafiadoras e divertidas."
             />
             <FeatureCard
               icon={<User className="w-8 h-8 text-tech-neon" />}
-              title="Instrutores Experientes"
-              description="Aprenda com profissionais que usam essas tecnologias diariamente."
+              title="Aprendendo Juntos"
+              description="Estude com colegas que sabem compartilhar e aprender colaborativamente."
             />
             <FeatureCard
               icon={<Star className="w-8 h-8 text-tech-neon" />}
               title="Certificado Digital"
-              description="Receba seu certificado de participação para adicionar ao seu currículo."
+              description="Ganhe um certificado para adicionar ao seu currículo."
             />
           </div>
         </div>
       </section>
+
       
       {/* Courses Preview */}
       <section className="py-20">
