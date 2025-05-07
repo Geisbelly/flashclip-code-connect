@@ -344,7 +344,7 @@ const RegistrationForm = () => {
             name="customIndicacao"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-white">Informe a instituição *</FormLabel>
+                <FormLabel className="text-white">Informe o nome de quem te indicou o FLashClip *</FormLabel>
                 <FormControl>
                   <Input 
                     placeholder="Digite o nome de quem te indicou" 
