@@ -46,7 +46,7 @@ export const coursesData: CourseProps[] = [
     id: "ruby",
     title: "Ruby: sua primeira web app",
     language: "Ruby",
-    description: "Comece sua jornada no desenvolvimento web com Ruby e Rails. Tudo explicado passo a passo, sem pressa, sem sustos.",
+    description: "Comece sua jornada no desenvolvimento web com Ruby. Tudo explicado passo a passo, sem pressa, sem sustos.",
     level: "Introdução",
     hours: 3,
     instructor: ["Julia", "Ítalo", "Sergio", "Hugo", "Regis", "Victor da M."],
