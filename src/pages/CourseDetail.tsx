@@ -11,6 +11,7 @@ import { scheduleData } from '@/data/schedule';
 import ScheduleItem, { ScheduleItemProps } from '@/components/common/ScheduleItem';
 import { CourseProps } from '@/components/common/CourseCard';
 import { InstructorProps } from '@/components/common/InstructorCard';
+import { Corner } from '@radix-ui/react-scroll-area';
 
 // 💡 Criado componente auxiliar que estava faltando
 const LearningItem = ({ children }: { children: React.ReactNode }) => (
@@ -155,7 +156,7 @@ const CourseDetail = () => {
                   <h2 className="text-2xl font-bold mb-4 text-white">O que você vai aprender</h2>
                   <ul className="space-y-3 text-white/80">
                     <LearningItem>Fundamentos da linguagem {course.language}</LearningItem>
-                    <LearningItem>Estruturas de dados e algoritmos</LearningItem>
+                    <LearningItem>Algoritmos aplicado em {course.language}</LearningItem>
                   </ul>
                 </div>
                 <div>

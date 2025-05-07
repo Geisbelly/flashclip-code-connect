@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 export interface InstructorProps {
   id: string;
   name: string;
-  role: string;
+  role?: string;
   bio: string;
   expertise: string[];
   image: string;
@@ -23,20 +23,35 @@ interface InstructorCardProps {
 }
 
 const InstructorCard: React.FC<InstructorCardProps> = ({ instructor }) => {
+
+  
+  const [imageLoaded, setImageLoaded] = React.useState(false);
+  const [imageError, setImageError] = React.useState(false);
+
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
+
+  const handleImageError = () => {
+    setImageError(true);
+  };
+  
   return (
     <Card className="flex flex-col overflow-hidden border-white/10 bg-tech-blue-light/30 backdrop-blur-sm hover:border-tech-neon/30 transition-all">
   <div className="relative">
     <div className="w-full h-48 overflow-hidden">
       <img 
-        src={instructor.image || 'https://images.unsplash.com/photo-1605379399843-5870eea9b74e?q=80&w=2400&auto=format&fit=crop'} 
+        src={instructor.image ? `/integrantes/${instructor.image}.jpg`:'https://images.unsplash.com/photo-1605379399843-5870eea9b74e?q=80&w=2400&auto=format&fit=crop'} 
         alt={instructor.name} 
+        onLoad={handleImageLoad}
+        onError={handleImageError}
         className="w-full h-full object-cover object-center filter grayscale hover:grayscale-0 transition-all duration-500"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-tech-blue to-transparent"></div>
     </div>
     <div className="absolute bottom-4 left-4 right-4">
       <Badge variant="outline" className="bg-tech-blue-light/80 text-white border-tech-neon/30 backdrop-blur-sm">
-        {instructor.expertise[0]}
+        {instructor.expertise}
       </Badge>
     </div>
   </div>
@@ -44,21 +59,23 @@ const InstructorCard: React.FC<InstructorCardProps> = ({ instructor }) => {
   <div className="flex-1 flex flex-col">
     <CardHeader className="pb-2 flex-1">
       <CardTitle className="text-xl font-bold text-white">{instructor.name}</CardTitle>
-      <CardDescription className="line-clamp-2 text-white/70">{instructor.bio}</CardDescription>
+      <CardDescription className="line-clamp-2 text-white/70">
+      {instructor.bio?.trim() !== '.' ? instructor.bio : 'Estudante da Ulbra'}
+    </CardDescription>
     </CardHeader>
 
     <CardFooter className="flex justify-between mt-auto">
       {instructor.social && (
         <div className="flex gap-3">
-          {instructor.social.github && (
+          {instructor.social.github && instructor.social.github.trim() !== '' && (
             <SocialLink href={instructor.social.github} icon="github" />
           )}
-          {instructor.social.linkedin && (
+          {instructor.social.linkedin && instructor.social.linkedin.trim() !== '' && (
             <SocialLink href={instructor.social.linkedin} icon="linkedin" />
           )}
-          {instructor.social.twitter && (
+          {/* {instructor.social.twitter && (
             <SocialLink href={instructor.social.twitter} icon="twitter" />
-          )}
+          )} */}
         </div>
       )}
     </CardFooter>

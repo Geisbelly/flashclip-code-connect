@@ -4,9 +4,9 @@ import { CourseProps } from "@/components/common/CourseCard";
 export const coursesData: CourseProps[] = [
   {
     id: "prolog",
-    title: "Prolog – Lógica computacional e IA simbólica",
+    title: "Desvendando a lógica com Prolog",
     language: "Prolog",
-    description: "Introdução à programação lógica e resolução de problemas complexos utilizando a linguagem Prolog.",
+    description: "Uma introdução leve e curiosa ao universo da programação lógica. Vamos explorar o básico de Prolog e entender como pensar como um computador lógico.",
     level: "Introdução",
     hours: 3,
     instructor: ["Geisbelly", "Levi Luz", "Maria Antônia", "Bruno"],
@@ -14,43 +14,42 @@ export const coursesData: CourseProps[] = [
   },
   {
     id: "csharp",
-    title: "Conheça a Liguagem C#",
+    title: "C# do zero: escrevendo seus primeiros comandos",
     language: "C#",
-    description: "Aprenda o conceitos básicos de C# em um curso prático.",
+    description: "Aprenda o essencial para começar a programar com C#. Ideal pra quem nunca encostou na linguagem ou quer uma introdução sem complicação.",
     level: "Introdução",
     hours: 3,
-    instructor: ["Mota","Arthur A.","David","Sávio","Arthur T.", "Lucas"],
+    instructor: ["Mota", "Arthur A.", "David", "Sávio", "Arthur T.", "Lucas"],
     prerequisites: ["Nenhum"]
   },
   {
     id: "typescript",
-    title: "TypeScript – Desenvolvimento front-end moderno",
+    title: "TypeScript sem mistério",
     language: "TypeScript",
-    description: "Explore as melhores práticas de desenvolvimento front-end com TypeScript e frameworks modernos como React.",
+    description: "Vamos conhecer os conceitos básicos do TypeScript e entender como ele dá uma força pro JavaScript com segurança e organização.",
     level: "Introdução",
     hours: 3,
-    instructor: ["Eduardo S.","Adeulvado","Samuel","Pedro"],
+    instructor: ["Eduardo S.", "Adeulvado", "Samuel", "Pedro"],
     prerequisites: ["Nenhum"]
   },
   {
     id: "go",
-    title: "Go – Programação de alta performance",
+    title: "Primeiros códigos com Go",
     language: "Go",
-    description: "Descubra como criar sistemas distribuídos e aplicações de alto desempenho com a linguagem Go.",
+    description: "Um passeio pelo básico da linguagem Go. Vamos ver como ela funciona e por que é tão amada por quem curte performance sem dor de cabeça.",
     level: "Introdução",
     hours: 3,
-    instructor: ["Anne","Victor T.","Pedro","Jonathan","Kauã", "Carlos"],
+    instructor: ["Anne", "Victor T.", "Pedro", "Jonathan", "Kauã", "Carlos"],
     prerequisites: ["Nenhum"]
   },
   {
     id: "ruby",
-    title: "Ruby – Desenvolvimento web com Ruby on Rails",
+    title: "Ruby: sua primeira web app",
     language: "Ruby",
-    description: "Crie aplicações web completas e elegantes utilizando Ruby e o framework Rails com produtividade impressionante.",
+    description: "Comece sua jornada no desenvolvimento web com Ruby e Rails. Tudo explicado passo a passo, sem pressa, sem sustos.",
     level: "Introdução",
     hours: 3,
-    instructor: ["Julia","Ítalo","Sergio","Hugo","Regis","Victor da M."],
+    instructor: ["Julia", "Ítalo", "Sergio", "Hugo", "Regis", "Victor da M."],
     prerequisites: ["Nenhum"]
   }
-  
 ];

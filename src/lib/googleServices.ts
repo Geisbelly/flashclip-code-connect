@@ -16,28 +16,97 @@ const gid = '179122432';
 
 
   
-  export async function getInstrutores() {
-    const Id = '16LKMRntSZlZyY5poRCHP-pm8vVwEeyz3dihIhDqgYKQ'
-    const Grid = '1427899878'
-    const link = `https://docs.google.com/spreadsheets/d/e/${Id}/pub?gid=${Grid}&single=true&output=csv`;
-    const res = await fetch(link);
-    const text = await res.text();
-  
-    // Parse simples CSV → Array de arrays
-    const rows = text.trim().split('\n').map(row => row.split(','));
-    return rows;
+  export interface InstructorProps {
+    id: string;
+    name: string;
+    role?: string;
+    bio: string;
+    expertise: string[];
+    image: string;
+    social?: {
+      github?: string;
+      linkedin?: string;
+      twitter?: string;
+    };
   }
 
+  function getId(link: string): string {
+    const patterns = [
+      /\/d\/([a-zA-Z0-9_-]{10,})/,         // /d/ID/
+      /id=([a-zA-Z0-9_-]{10,})/,           // id=ID
+      /\/file\/d\/([a-zA-Z0-9_-]{10,})/,   // /file/d/ID
+      /\/uc\?export=view&id=([a-zA-Z0-9_-]{10,})/ // uc?export=view&id=ID
+    ];
+  
+    for (const pattern of patterns) {
+      const match = link.match(pattern);
+      if (match && match[1]) return match[1];
+    }
+  
+    return link.trim(); // fallback bruto, se não for link do Drive, retorna o original mesmo
+  }
+  
+  
+
+  export async function getInstrutores() {
+    const link =
+      'https://docs.google.com/spreadsheets/d/e/2PACX-1vROsUV2SU4TSAu-VnEet3YFjAuHz1ZnM-09euJYTjQjBcDaQ4Vw0uRZf1lH1ASYJis-vviSdzJ0aOPy/pub?gid=1427899878&single=true&output=csv';
+    const res = await fetch(link);
+    const text = await res.text();
+
+
+  
+    // quebra por cada linha que COMEÇA com uma data no formato dd/mm/aaaa
+    const blocks = text.split(/(?=\d{2}\/\d{2}\/\d{4})/g).slice(1);
+  
+    const instrutores = blocks.map((block, index) => {
+      const [data, name, expertise, bio,email, github, instagram, linkedin, image] = block.trim().split(',');
+  
+      return {
+        id: (index + 1).toString(),
+        data,
+        name,
+        bio,
+        expertise,
+        image: getId(image),
+        social:{
+          github: github,
+          linkedin: linkedin,
+          twitter: instagram,
+        }
+      };
+    });
+  
+    return instrutores;
+  }
+  
+  
+
+  
+
+
+  
 
   export async function getCursos() {
-    const Id = '16LKMRntSZlZyY5poRCHP-pm8vVwEeyz3dihIhDqgYKQ'
-    const Grid = '811359191'
-    const link = `https://docs.google.com/spreadsheets/d/e/${Id}/pub?gid=${Grid}&single=true&output=csv`;
+    const link =
+      'https://docs.google.com/spreadsheets/d/e/2PACX-1vROsUV2SU4TSAu-VnEet3YFjAuHz1ZnM-09euJYTjQjBcDaQ4Vw0uRZf1lH1ASYJis-vviSdzJ0aOPy/pub?gid=811359191&single=true&output=csv';
     const res = await fetch(link);
     const text = await res.text();
+
+
   
-    // Parse simples CSV → Array de arrays
-    const rows = text.trim().split('\n').map(row => row.split(','));
-    return rows;
+    // quebra por cada linha que COMEÇA com uma data no formato dd/mm/aaaa
+    const blocks = text.split(/(?=\d{2}\/\d{2}\/\d{4})/g).slice(1);
+  
+    const instrutores = blocks.map((block, index) => {
+      const [data, titulo, coluna, sobre,oque, requisitos, ministrantes, auxiliares] = block.trim().split(',');
+  
+      return {
+        id: (index + 1).toString(),
+        data,
+ 
+      };
+    });
+  
+    return instrutores;
   }
-  

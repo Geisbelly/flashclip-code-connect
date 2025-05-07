@@ -1,12 +1,28 @@
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import SectionTitle from '@/components/common/SectionTitle';
 import InstructorCard from '@/components/common/InstructorCard';
-import { instructorsData } from '@/data/instructors';
+import { getInstrutores } from '@/lib/googleServices';
+
 
 const Instructors = () => {
+  const [instructorsData, setInstructorsData] = useState([]);
+
+  
+
+  useEffect(()=>{
+    
+    
+    async function buscarInstrutores() {
+      const dados = await getInstrutores()
+          setInstructorsData(dados) 
+    }
+    buscarInstrutores()
+
+  },[])
+
   return (
     <>
       <Navbar />
