@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import SectionTitle from '@/components/common/SectionTitle';
-import InstructorCard from '@/components/common/InstructorCard';
+import InstructorCard, { InstructorProps } from '@/components/common/InstructorCard';
 import { getInstrutores } from '@/lib/googleServices';
 
 
@@ -17,7 +17,10 @@ const Instructors = () => {
     
     async function buscarInstrutores() {
       const dados = await getInstrutores()
-          setInstructorsData(dados) 
+      const lista_ordenada = dados.sort((a: { name: string }, b: { name: string }) => 
+        a.name.localeCompare(b.name)
+    )
+          setInstructorsData(lista_ordenada) 
     }
     buscarInstrutores()
 
