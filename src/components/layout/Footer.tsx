@@ -82,7 +82,7 @@ const Footer = () => {
             </span>
           </Link>
 
-          <div className="flex flex-wrap justify-center md:justify-end gap-6">
+          <div className="flex flex-wrap justify-center md:justify-end gap-4">
             {/* FlashClip */}
             <div className="flex items-center gap-4">
               <Link to="/" className="flex items-center gap-2">
@@ -91,12 +91,22 @@ const Footer = () => {
                 </span>
               </Link>
               <div className="flex gap-2">
-                <SocialIcon href="#" icon="github" />
-                <SocialIcon href="#" icon="twitter" />
-                <SocialIcon href="#" icon="instagram" />
+                <SocialIcon href="https://www.instagram.com/flashclip2025" icon="instagram" />
               </div>
             </div>
 
+            {/* Departamento de Computação */}
+            <div className="flex items-center gap-4">
+              <Link to="/" className="flex items-center gap-2">
+                <span className="font-code font-bold text-white text-[14px] tracking-tight">
+                  Computação em <span className="text-tech-neon">Movimento</span>
+                </span>
+              </Link>
+              <div className="flex gap-2">
+                <SocialIcon href="https://www.instagram.com/computacaoemmovimento/" icon="instagram" />
+                <SocialIcon href="https://www.youtube.com/c/Computa%C3%A7%C3%A3oemMovimento/featured" icon="youtube" />
+              </div>
+            </div>
             {/* UlbraPalmas */}
             <div className="flex items-center gap-4">
               <Link to="/" className="flex items-center gap-2">
@@ -105,9 +115,8 @@ const Footer = () => {
                 </span>
               </Link>
               <div className="flex gap-2">
-                <SocialIcon href="#" icon="github" />
-                <SocialIcon href="#" icon="twitter" />
-                <SocialIcon href="#" icon="instagram" />
+                <SocialIcon href="https://www.instagram.com/ulbrapalmas/" icon="instagram" />
+                <SocialIcon href="https://www.ulbra.br/palmas?gad_source=1&gad_campaignid=22371936440&gbraid=0AAAAADq4_sKcCxZVq3nDFXLrtJchAriAj&gclid=CjwKCAjwiezABhBZEiwAEbTPGHRaxnpCBA4vTsV9624ieeGldnoM4uWRovx19OmxuaG0BFakmdT7NhoCQH8QAvD_BwE" icon="site" />
               </div>
             </div>
           </div>
@@ -159,6 +168,10 @@ const SocialIcon = ({ href, icon }: { href: string; icon: string }) => {
       "M20 3.8a8.5 8.5 0 0 1-2.36.64 4.13 4.13 0 0 0 1.81-2.27 8.2 8.2 0 0 1-2.61 1 4.1 4.1 0 0 0-7 3.74 11.64 11.64 0 0 1-8.45-4.29 4.16 4.16 0 0 0-.55 2.07 4.09 4.09 0 0 0 1.82 3.41 4.05 4.05 0 0 1-1.86-.51v.05a4.1 4.1 0 0 0 3.3 4 3.93 3.93 0 0 1-1.1.15 4 4 0 0 1-.77-.07 4.11 4.11 0 0 0 3.83 2.84A8.22 8.22 0 0 1 1 16.4a11.57 11.57 0 0 0 6.29 1.84A11.59 11.59 0 0 0 19 6.6v-.53a8.43 8.43 0 0 0 2-2.13z",
     instagram:
       "M10 0C7.3 0 6.9.01 5.9.05 4.9.09 4.14.23 3.47.49a5.04 5.04 0 0 0-1.8 1.18 5.05 5.05 0 0 0-1.18 1.8c-.26.67-.4 1.43-.44 2.44C.01 6.91 0 7.3 0 10c0 2.7.01 3.1.05 4.1.04 1 .18 1.76.44 2.43a5.05 5.05 0 0 0 1.18 1.8 5.04 5.04 0 0 0 1.8 1.18c.67.26 1.43.4 2.44.44 1 .04 1.4.05 4.1.05 2.7 0 3.1-.01 4.1-.05 1-.04 1.76-.18 2.43-.44a5.04 5.04 0 0 0 1.8-1.18 5.05 5.05 0 0 0 1.18-1.8c.26-.67.4-1.43.44-2.44.04-1 .05-1.4.05-4.1 0-2.7-.01-3.1-.05-4.1-.04-1-.18-1.76-.44-2.43a5.05 5.05 0 0 0-1.18-1.8 5.04 5.04 0 0 0-1.8-1.18c-.67-.26-1.43-.4-2.44-.44C13.1.01 12.7 0 10 0zm0 1.8c2.67 0 2.99.01 4.04.06.97.04 1.5.2 1.86.34.47.18.8.4 1.15.74.34.34.56.68.74 1.15.13.35.3.9.34 1.87.04 1.05.06 1.37.06 4.04 0 2.67-.02 2.99-.06 4.04-.04.97-.2 1.5-.34 1.86a3.25 3.25 0 0 1-.74 1.15 3.25 3.25 0 0 1-1.15.74c-.35.13-.9.3-1.87.34-1.05.04-1.37.06-4.04.06-2.67 0-2.99-.02-4.04-.06-.97-.04-1.5-.2-1.86-.34a3.25 3.25 0 0 1-1.15-.74 3.25 3.25 0 0 1-.74-1.15c-.13-.35-.3-.9-.34-1.87-.04-1.05-.06-1.37-.06-4.04 0-2.67.02-2.99.06-4.04.04-.97.2-1.5.34-1.86.18-.47.4-.8.74-1.15.34-.34.68-.56 1.15-.74.35-.13.9-.3 1.87-.34 1.05-.04 1.37-.06 4.04-.06z M10 13.33a3.33 3.33 0 1 1 0-6.66 3.33 3.33 0 0 1 0 6.66zm0-8.46a5.13 5.13 0 1 0 0 10.26 5.13 5.13 0 0 0 0-10.26zm6.54-.2a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z",
+    site: 
+      "M12 4a8 8 0 0 1 5.66 13.66 8 8 0 1 1-11.31-11.31A7.95 7.95 0 0 1 12 4m0-2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z",
+    youtube:
+      "M19.615 6.405a2.5 2.5 0 0 0-1.765-1.767C16.225 4.25 10 4.25 10 4.25s-6.225 0-7.85.388a2.5 2.5 0 0 0-1.765 1.767A26.43 26.43 0 0 0 0 10a26.43 26.43 0 0 0 .385 3.595 2.5 2.5 0 0 0 1.765 1.767c1.625.388 7.85.388 7.85.388s6.225 0 7.85-.388a2.5 2.5 0 0 0 1.765-1.767A26.43 26.43 0 0 0 20 10a26.43 26.43 0 0 0-.385-3.595zM8 13V7l5 3-5 3z", // ícone oficial do YouTube (play em tela)
   };
 
   return (
