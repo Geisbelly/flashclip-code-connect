@@ -25,3 +25,5 @@ dist-ssr
 
 .env
 .history
+token.json
+credentials.json
