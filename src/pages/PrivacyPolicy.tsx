@@ -99,7 +99,7 @@ export default function PrivacyPolicy() {
           </p>
           <p>
             Se você tiver dúvidas sobre esta Política de Privacidade, entre em
-            contato pelo e-mail: <strong>[seuemail@exemplo.com]</strong>
+            contato pelo e-mail: <strong>[contatoflashclip@gmail.com]</strong>
           </p>
         </div>
       </section>
