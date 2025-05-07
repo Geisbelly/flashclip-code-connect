@@ -30,7 +30,7 @@ const Navbar = () => {
           <Link to="/" className="flex items-center gap-2 group">
             <div className="relative w-12 h-12 flex items-center justify-center">
                 <a href="/">
-                  <img src="/logo.png" alt="Logo"  />
+                  <img src="/logo.png" alt="Logo"  width={38} />
                 </a>
             </div>
             <span className="font-code font-bold text-white text-xl tracking-tight">
