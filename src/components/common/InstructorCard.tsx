@@ -45,7 +45,7 @@ const InstructorCard: React.FC<InstructorCardProps> = ({ instructor }) => {
         alt={instructor.name} 
         onLoad={handleImageLoad}
         onError={handleImageError}
-        className="w-full h-full object-cover object-center filter grayscale hover:grayscale-0 transition-all duration-500"
+        className="w-full h-full object-cover object-center filter  transition-all duration-500"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-tech-blue to-transparent"></div>
     </div>
