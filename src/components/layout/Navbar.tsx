@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Calendar, Star, User, Video } from "lucide-react";
 
-export const Navbar = () => {
+const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -157,3 +157,5 @@ const MobileNavLink = ({
     <span>{children}</span>
   </Link>
 );
+
+export default Navbar;
