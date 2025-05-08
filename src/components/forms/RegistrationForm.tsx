@@ -32,6 +32,8 @@ const formSchema = z.object({
   indicacao: z.string().min(2, { message: "Por favor, selecione um grupo." }),
   course: z.string().min(1, { message: "Por favor, selecione um curso." }),
   miniCourse: z.string().min(1, { message: "Por favor, selecione um minicurso." }),
+  meio: z.string().optional(),
+  customMeio: z.string().optional(),
   customCourse: z.string().optional(),
   customInstitution: z.string().optional(),
   customIndicacao: z.string().optional(),
@@ -51,11 +53,13 @@ const RegistrationForm = () => {
       email: "",
       phone: "",
       institution: "",
-      indicacao: "",
       course: "",
+      indicacao: "",
+      meio: "",
       miniCourse: "",
       customCourse: "",
       customInstitution: "",
+      customMeio: "",
       acceptTerms: false,
     },
   });
@@ -118,6 +122,14 @@ const RegistrationForm = () => {
         data.append('entry.1239734294.other_option_response', values.customIndicacao);
       } else {
         data.append('entry.1239734294', values.indicacao);
+      }
+
+      // Meio
+      if (values.indicacao === 'Outro') {
+        data.append('entry.687964703', '__other_option__');
+        data.append('entry.687964703.other_option_response', values.customMeio);
+      } else {
+        data.append('entry.687964703', values.meio);
       }
       
       data.append('entry.315572132', values.miniCourse);
@@ -346,6 +358,52 @@ const RegistrationForm = () => {
             render={({ field }) => (
               <FormItem>
                 <FormLabel className="text-white">Informe o nome de quem te indicou o FLashClip *</FormLabel>
+                <FormControl>
+                  <Input 
+                    placeholder="Digite o nome de quem te indicou" 
+                    {...field} 
+                    className="bg-tech-blue-light/30 border-white/10 text-white placeholder:text-white/50 focus:border-tech-neon"
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+        )}
+
+
+        <FormField
+          control={form.control}
+          name="meio"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel className="text-white">Por onde você ficou sabendo do Evento? *</FormLabel>
+              <Select onValueChange={field.onChange} defaultValue={field.value}>
+                <FormControl>
+                  <SelectTrigger className="bg-tech-blue-light/30 border-white/10 text-white">
+                    <SelectValue placeholder="Selecione uma instituição" />
+                  </SelectTrigger>
+                </FormControl>
+                <SelectContent className="bg-tech-blue-light border-white/10">
+                  <SelectItem value="Instagram">Instagram</SelectItem>
+                  <SelectItem value="Whatsapp">Whatsapp</SelectItem>
+                  <SelectItem value="Mural - Card">Mural/Card</SelectItem>
+                  <SelectItem value="Sala de Aula">Grupo Ruby</SelectItem>
+                  <SelectItem value="Outro">Outro</SelectItem>
+                </SelectContent>
+              </Select>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+        {form.watch("meio") === "Outro" && (
+          <FormField
+            control={form.control}
+            name="customMeio"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel className="text-white">Qual outro meio? *</FormLabel>
                 <FormControl>
                   <Input 
                     placeholder="Digite o nome de quem te indicou" 
