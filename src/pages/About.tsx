@@ -38,7 +38,7 @@ const About = () => {
                 O FlashClip nasceu da necessidade de democratizar o acesso ao conhecimento em programação, focando em linguagens modernas e suas aplicações práticas. Nosso objetivo é criar uma ponte entre a teoria acadêmica e a prática do mercado.
               </p>
               <p>
-                Através de cursos intensivos ministrados por profissionais experientes, buscamos oferecer uma experiência imersiva que permita aos participantes desenvolverem novas habilidades em um curto espaço de tempo.
+                Através de cursos intensivos ministrados por acadêmicos treinados, buscamos oferecer uma experiência imersiva que permita aos participantes desenvolverem novas habilidades em um curto espaço de tempo.
               </p>
               <p>
                 Acreditamos que o aprendizado acontece pela prática, por isso todos os nossos cursos têm uma forte componente hands-on, com projetos e exercícios que simulam desafios reais do dia a dia.
