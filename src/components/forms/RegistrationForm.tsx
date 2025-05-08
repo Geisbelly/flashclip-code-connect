@@ -292,10 +292,10 @@ const RegistrationForm = () => {
                   <SelectItem value="IFTO">IFTO</SelectItem>
                   <SelectItem value="UFT">UFT</SelectItem>
                   <SelectItem value="UNITINS">UNITINS</SelectItem>
-                  <SelectItem value="Unopa">UNOPA</SelectItem>
-                  <SelectItem value="Catolica">Catolica</SelectItem>
+                  <SelectItem value="UNOPA">UNOPA</SelectItem>
+                  <SelectItem value="Católica">Catolica</SelectItem>
                   <SelectItem value="Ulbrinha">Ulbrinha</SelectItem>
-                  <SelectItem value="Cem">CEM de Taquaralto</SelectItem>
+                  <SelectItem value="CEM de Taquaralto">CEM de Taquaralto</SelectItem>
                   <SelectItem value="Outro">Outro</SelectItem>
                 </SelectContent>
               </Select>
@@ -388,7 +388,7 @@ const RegistrationForm = () => {
                   <SelectItem value="Instagram">Instagram</SelectItem>
                   <SelectItem value="Whatsapp">Whatsapp</SelectItem>
                   <SelectItem value="Mural - Card">Mural/Card</SelectItem>
-                  <SelectItem value="Sala de Aula">Grupo Ruby</SelectItem>
+                  <SelectItem value="Sala de Aula">Sala de Aula</SelectItem>
                   <SelectItem value="Outro">Outro</SelectItem>
                 </SelectContent>
               </Select>
