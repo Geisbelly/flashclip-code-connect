@@ -16,19 +16,6 @@ const gid = '179122432';
 
 
   
-  export interface InstructorProps {
-    id: string;
-    name: string;
-    role?: string;
-    bio: string;
-    expertise: string[];
-    image: string;
-    social?: {
-      github?: string;
-      linkedin?: string;
-      instagram?: string;
-    };
-  }
 
   function getId(link: string): string {
     const patterns = [
@@ -65,8 +52,8 @@ const gid = '179122432';
   
       return {
         id: (index + 1).toString(),
-        data,
         name,
+        role: bio,
         bio,
         expertise,
         image: getId(image),
