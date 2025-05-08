@@ -125,7 +125,7 @@ const RegistrationForm = () => {
       }
 
       // Meio
-      if (values.indicacao === 'Outro') {
+      if (values.meio === 'Outro') {
         data.append('entry.687964703', '__other_option__');
         data.append('entry.687964703.other_option_response', values.customMeio);
       } else {
