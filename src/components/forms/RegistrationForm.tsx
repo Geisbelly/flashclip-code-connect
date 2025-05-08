@@ -330,6 +330,7 @@ const RegistrationForm = () => {
                   <SelectItem value="Grupo C#">Grupo C#</SelectItem>
                   <SelectItem value="Grupo Ruby">Grupo Ruby</SelectItem>
                   <SelectItem value="Grupo TypeScript">Grupo TypeScript</SelectItem>
+                  <SelectItem value="Todos em Sala">Todos em Sala</SelectItem>
                   <SelectItem value="Outro">Outro</SelectItem>
                 </SelectContent>
               </Select>
