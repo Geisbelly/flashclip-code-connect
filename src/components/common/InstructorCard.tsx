@@ -61,7 +61,7 @@ const InstructorCard: React.FC<InstructorCardProps> = ({ instructor }) => {
     <CardHeader className="pb-2 flex-1">
       <CardTitle className="text-xl font-bold text-white">{instructor.name}</CardTitle>
       <CardDescription className="line-clamp-2 text-white/70">
-      {instructor.bio?.trim() !== '.' ? instructor.bio : 'Estudante da Ulbra'}
+      {instructor.bio}
     </CardDescription>
     </CardHeader>
 
