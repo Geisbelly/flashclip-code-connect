@@ -15,8 +15,18 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
+import Programacao from "@/components/common/EventFlow"; // ou o caminho que você usa
+import { eventos } from "@/data/event-steps";
+
+
+
+
+
 const Schedule = () => {
   const [filter, setFilter] = useState<string>("all");
+  const [activeDate, setActiveDate] = useState<string>(Object.keys(eventos)[0]);
+
+
 
   // Group schedules by date
   const schedulesByDate = scheduleData.reduce(
@@ -58,14 +68,24 @@ const Schedule = () => {
           </div>
         </div>
       </section>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8"></div>
+            
+          <Programacao eventos={eventos} />
 
+
+      </div>
+      
       {/* Schedule Filter */}
       <section className="py-10">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
+          
             <h2 className="text-2xl font-bold text-white">
               Aulas e Atividades
             </h2>
+
+            
 
             <div className="w-full sm:w-auto">
               <Select value={filter} onValueChange={setFilter}>
