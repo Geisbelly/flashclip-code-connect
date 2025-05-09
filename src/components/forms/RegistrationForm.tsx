@@ -85,8 +85,9 @@ const RegistrationForm = () => {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try{
-      const existe = await emailJaCadastrado(values.email)
       setIsSubmitting(true)
+      const existe = await emailJaCadastrado(values.email)
+     
       if(existe){
         toast.message("Você não pode se cadastrar duas vocês com o mesmo email!")
         setIsSubmitting(false)
