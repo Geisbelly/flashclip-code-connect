@@ -80,7 +80,7 @@ const Contact = () => {
                   title="Redes Sociais" 
                   content={
                     <div className="flex gap-4">
-                      <SocialLink href="https://instagram.com/flashclip2024" icon="instagram" />
+                      <SocialLink href="https://instagram.com/flashclip2025" icon="instagram" />
                       <div rel="noopener noreferrer" 
                             className="w-10 h-10 rounded-full flex items-center justify-center border border-white/20 text-white/70 hover:text-tech-neon hover:border-tech-neon transition-colors">
                       <svg

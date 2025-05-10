@@ -17,9 +17,16 @@ const Instructors = () => {
     
     async function buscarInstrutores() {
       const dados = await getInstrutores()
-      const lista_ordenada = dados.sort((a: { name: string }, b: { name: string }) => 
-        a.name.localeCompare(b.name)
-    )
+      const lista_ordenada = dados.sort((a, b) => {
+        const aIsLider = a.expertise.includes("Líder") ? 0 : 1;
+        const bIsLider = b.expertise.includes("Líder") ? 0 : 1;
+    
+        if (aIsLider !== bIsLider) {
+          return aIsLider - bIsLider; // Líder primeiro
+        }
+    
+        return a.name.localeCompare(b.name); // Depois ordena por nome
+      });
           setInstructorsData(lista_ordenada) 
     }
     buscarInstrutores()
