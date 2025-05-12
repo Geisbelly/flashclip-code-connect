@@ -70,7 +70,9 @@ const Schedule = () => {
       </section>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8"></div>
-            
+          <h2 className="text-2xl font-bold text-white">
+              Atividades
+          </h2>  
           <Programacao eventos={eventos} />
 
 
@@ -82,7 +84,7 @@ const Schedule = () => {
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
           
             <h2 className="text-2xl font-bold text-white">
-              Aulas e Atividades
+              Aulas
             </h2>
 
             
