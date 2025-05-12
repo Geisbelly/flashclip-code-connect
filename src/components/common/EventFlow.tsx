@@ -19,7 +19,7 @@ const Programacao: React.FC<ProgramacaoProps> = ({ eventos }) => {
         return (
           <div key={data}>
             {/* Seção para exibir a data */}
-            <div className="flex items-center gap-4 mb-6">
+            <div className="flex items-center gap-4 mb-12 mt-6">
               <hr className="flex-1 border " style={{ borderColor: "rgb(8, 194, 238)" }}/>
               <div className="text-[#FFFFF] font-semibold border px-6 py-2 rounded-md text-lg text-center whitespace-nowrap shadow-md" style={{backgroundColor: "rgba(59, 131, 246, 0.05)", borderColor: "rgba(184, 184, 184, 0.13)"}}>
                 {data.charAt(0).toUpperCase() + data.slice(1)}
@@ -57,11 +57,12 @@ const Programacao: React.FC<ProgramacaoProps> = ({ eventos }) => {
                         {evento.time} - {evento.endTime} ({evento.duration})
                       </span>
                     </div>
-
+                    {evento.location && (
                     <div className="flex items-center gap-1 text-gray-400 text-xs">
                       <MapPin className="h-3 w-3" style={{ color: "rgb(8, 194, 238)" }} />
                       <span>{evento.location}</span>
                     </div>
+                    )}
 
                     {evento.speaker && (
                       <div className="flex items-center gap-1 text-gray-400 text-xs mt-2">
