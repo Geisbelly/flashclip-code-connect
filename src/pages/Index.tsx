@@ -12,6 +12,7 @@ import { testimonialsData } from '@/data/testimonials';
 import { eventInfo } from '@/data/eventInfo';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
+import SponsorsHome from "@/components/common/SponsorsHome";
 
 const Index = () => {
   return (
@@ -51,6 +52,8 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <SponsorsHome />
       
       {/* Features */}
       <section className="py-20 bg-tech-blue-light/10">
