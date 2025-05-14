@@ -1,7 +1,7 @@
 import React from "react";
 import { sponsorsData } from "@/data/sponsors";
 
-const SponsorsStrip = () => {
+const SponsorsHome = () => {
   return (
     <section className="py-16 bg-tech-blue-light/20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -10,7 +10,7 @@ const SponsorsStrip = () => {
           <span className="text-tech-neon neon-text">Patrocinadores</span>
         </h2>
 
-        <div className="flex flex-wrap justify-center items-center gap-8">
+        <div className="flex flex-wrap justify-center items-center gap-12">
           {sponsorsData.map((sponsor) => (
             <a
               key={sponsor.id}
@@ -35,4 +35,4 @@ const SponsorsStrip = () => {
   );
 };
 
-export default SponsorsStrip;
+export default SponsorsHome;
