@@ -4,7 +4,7 @@ export interface SponsorProps {
   name: string;
   logo: string;
   description: string;
-  tier: 'diamond' | 'gold' | 'silver' | 'bronze';
+  tier: 'diamond' | 'silver' | 'bronze';
   website?: string;
   socialMedia: {
     facebook?: string;
@@ -16,33 +16,26 @@ export interface SponsorProps {
 }
 
 export const sponsorsData: SponsorProps[] = [
-  //{
-  //   id: "s1",
-  //   name: "TechCorp",
-  //   logo: "https://images.unsplash.com/photo-1560179707-f14e90ef3603?q=80&w=1374&auto=format&fit=crop",
-  //   description: "Empresa líder em soluções tecnológicas para o mercado corporativo.",
-  //   tier: "diamond",
-  //   website: "https://example.com/techcorp",
-  //   socialMedia: {
-  //     facebook: "https://facebook.com",
-  //     twitter: "https://twitter.com",
-  //     instagram: "https://instagram.com",
-  //     linkedin: "https://linkedin.com",
-  //   }
-  // },
-  // {
-  //   id: "s2",
-  //   name: "CodeMasters",
-  //   logo: "https://images.unsplash.com/photo-1560179707-f14e90ef3603?q=80&w=1374&auto=format&fit=crop",
-  //   description: "Desenvolvedores de software especializados em automação de processos.",
-  //   tier: "gold",
-  //   website: "https://example.com/codemasters",
-  //   socialMedia: {
-  //     facebook: "https://facebook.com",
-  //     linkedin: "https://linkedin.com",
-  //     youtube: "https://youtube.com",
-  //   }
-  // },
+  {
+    id: "s1",
+    name: "Axiom",
+    logo: "http://flash-clip.vercel.app/patrocinadores/Axiom.jpeg",
+    description: "Uma loja para criação e venda de artigos 3D! Além de brinquedos, decoração e utilidades.",
+    tier: "bronze",
+    socialMedia: {}
+  },
+  {
+    id: "s2",
+    name: "CicloPalmas",
+    logo: "https://dcdn-us.mitiendanube.com/stores/005/037/006/themes/common/logo-958559295-1744309486-dd288b8de47ed140ad3f85883632cee61744309486.png?0",
+    description: "A 25 anos entregando aos lojistas peças e acessórios para bicicletas e motos, em todo o estado do Tocantins e Estados vizinhos.",
+    tier: "bronze",
+    website: "https://ciclopalmas.com.br/",
+    socialMedia: {
+      facebook: "https://www.facebook.com/Ciclopalmas/",
+      instagram: "https://www.instagram.com/ciclopalmas",
+    }
+  },
   // {
   //   id: "s3",
   //   name: "InnovateNow",
