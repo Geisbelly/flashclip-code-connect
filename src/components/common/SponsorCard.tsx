@@ -14,13 +14,13 @@ const SponsorCard: React.FC<SponsorCardProps> = ({ sponsor }) => {
     diamond: "border-tech-neon neon-border",
     gold: "border-yellow-400",
     silver: "border-gray-300",
-    bronze: "border-amber-600",
+    bronze: "border-amber-500",
   };
 
   return (
     <Card className={`bg-tech-blue-light/30 backdrop-blur-sm border-2 ${tierColors[sponsor.tier]} hover:shadow-lg transition-all duration-300`}>
       <CardHeader>
-        <div className="h-40 w-full overflow-hidden rounded-lg mb-4">
+        <div className="h-52 w-full overflow-hidden rounded-lg mb-4">
           <img 
             src={sponsor.logo} 
             alt={`${sponsor.name} logo`}

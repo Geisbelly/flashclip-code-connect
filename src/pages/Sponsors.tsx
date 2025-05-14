@@ -1,5 +1,4 @@
 
-import React from 'react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import SectionTitle from '@/components/common/SectionTitle';
@@ -9,7 +8,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const Sponsors = () => {
   const diamondSponsors = sponsorsData.filter(sponsor => sponsor.tier === 'diamond');
-  const goldSponsors = sponsorsData.filter(sponsor => sponsor.tier === 'gold');
   const silverSponsors = sponsorsData.filter(sponsor => sponsor.tier === 'silver');
   const bronzeSponsors = sponsorsData.filter(sponsor => sponsor.tier === 'bronze');
 
@@ -45,7 +43,6 @@ const Sponsors = () => {
             <TabsList className="bg-tech-blue-light/30 border border-white/10 mx-auto">
               <TabsTrigger value="all" className="data-[state=active]:bg-tech-neon data-[state=active]:text-tech-blue">Todos</TabsTrigger>
               <TabsTrigger value="diamond" className="data-[state=active]:bg-tech-neon data-[state=active]:text-tech-blue">Diamante</TabsTrigger>
-              <TabsTrigger value="gold" className="data-[state=active]:bg-tech-neon data-[state=active]:text-tech-blue">Ouro</TabsTrigger>
               <TabsTrigger value="silver" className="data-[state=active]:bg-tech-neon data-[state=active]:text-tech-blue">Prata</TabsTrigger>
               <TabsTrigger value="bronze" className="data-[state=active]:bg-tech-neon data-[state=active]:text-tech-blue">Bronze</TabsTrigger>
             </TabsList>
@@ -69,16 +66,7 @@ const Sponsors = () => {
               </div>
             </TabsContent>
             
-            <TabsContent value="gold" className="mt-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {goldSponsors.map((sponsor) => (
-                  <SponsorCard key={sponsor.id} sponsor={sponsor} />
-                ))}
-                {goldSponsors.length === 0 && (
-                  <p className="text-white/70 col-span-3 text-center py-8">Nenhum patrocinador ouro no momento.</p>
-                )}
-              </div>
-            </TabsContent>
+            
             
             <TabsContent value="silver" className="mt-8">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
