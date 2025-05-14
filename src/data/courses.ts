@@ -44,9 +44,9 @@ export const coursesData: CourseProps[] = [
   },
   {
     id: "ruby",
-    title: "Ruby: sua primeira web app",
+    title: "Ruby em Ação: Programação Descomplicada para Mentes Curiosas",
     language: "Ruby",
-    description: "Comece sua jornada no desenvolvimento web com Ruby. Tudo explicado passo a passo, sem pressa, sem sustos.",
+    description: "Neste minicurso, você aprenderá os fundamentos da programação de forma leve e prática usando a linguagem Ruby. A proposta é construir, passo a passo, um jogo interativo, enquanto explora conceitos essenciais como variáveis, condicionais, loops e entrada de dados.",
     level: "Introdução",
     hours: 3,
     instructor: ["Julia", "Ítalo", "Sergio", "Hugo", "Regis", "Victor da M."],
