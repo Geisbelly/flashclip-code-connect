@@ -38,52 +38,26 @@ export const sponsorsData: SponsorProps[] = [
   },
   // {
   //   id: "s3",
-  //   name: "InnovateNow",
+  //   name: "CRP Tecnologia",
   //   logo: "https://images.unsplash.com/photo-1560179707-f14e90ef3603?q=80&w=1374&auto=format&fit=crop",
-  //   description: "Start-up focada em soluções inovadoras para desafios tecnológicos.",
+  //   description: "Nossa missão é criar, de forma dinâmica e sustentável, recursos inovadores que tornem as empresas e o mundo cada dia melhor.",
   //   tier: "gold",
-  //   website: "https://example.com/innovatenow",
+  //   website: "https://crptecnologia.com.br/",
   //   socialMedia: {
-  //     instagram: "https://instagram.com",
-  //     linkedin: "https://linkedin.com",
-  //     twitter: "https://twitter.com",
+  //     instagram: "https://www.instagram.com/crptecnologia/",
+  //     facebook: "https://www.facebook.com/crptecnologia/?locale=pt_BR"
   //   }
   // },
   // {
   //   id: "s4",
-  //   name: "DevAcademy",
+  //   name: "SENAC",
   //   logo: "https://images.unsplash.com/photo-1560179707-f14e90ef3603?q=80&w=1374&auto=format&fit=crop",
-  //   description: "Instituição educacional especializada em formação de desenvolvedores.",
+  //   description: "Educar para o trabalho, de forma inovadora e inclusiva, em atividades do comércio de bens, serviços e turismo.",
   //   tier: "silver",
-  //   website: "https://example.com/devacademy",
+  //   website: "https://www.to.senac.br/",
   //   socialMedia: {
-  //     facebook: "https://facebook.com",
-  //     youtube: "https://youtube.com",
-  //     instagram: "https://instagram.com",
-  //   }
-  // },
-  // {
-  //   id: "s5",
-  //   name: "ByteSystems",
-  //   logo: "https://images.unsplash.com/photo-1560179707-f14e90ef3603?q=80&w=1374&auto=format&fit=crop",
-  //   description: "Sistemas integrados e soluções de infraestrutura para empresas.",
-  //   tier: "bronze",
-  //   website: "https://example.com/bytesystems",
-  //   socialMedia: {
-  //     linkedin: "https://linkedin.com",
-  //     twitter: "https://twitter.com",
-  //   }
-  // },
-  // {
-  //   id: "s6",
-  //   name: "CloudFusion",
-  //   logo: "https://images.unsplash.com/photo-1560179707-f14e90ef3603?q=80&w=1374&auto=format&fit=crop",
-  //   description: "Plataforma de serviços cloud para aplicações de alta demanda.",
-  //   tier: "bronze",
-  //   website: "https://example.com/cloudfusion",
-  //   socialMedia: {
-  //     facebook: "https://facebook.com",
-  //     linkedin: "https://linkedin.com",
+  //     linkedin: "https://linktr.ee/senactocantins",
+  //     instagram: "https://www.instagram.com/senactocantins/",
   //   }
   // }
 ];

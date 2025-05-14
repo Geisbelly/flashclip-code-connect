@@ -1,5 +1,5 @@
 
-import React from 'react';
+//import React from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
 import { SponsorProps } from '@/data/sponsors';
