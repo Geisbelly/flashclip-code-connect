@@ -38,7 +38,7 @@ export const scheduleData: ScheduleItemProps[] = [
   },
   {
     id: "s7",
-    title: "Ruby – Desenvolvimento web com Ruby on Rails",
+    title: "Ruby em Ação: Programação Descomplicada para Mentes Curiosas",
     courseId: "ruby",
     date: "2025-06-07",
     startTime: "14:00",
