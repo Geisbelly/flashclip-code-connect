@@ -19,7 +19,7 @@ export const sponsorsData: SponsorProps[] = [
   {
     id: "s1",
     name: "Axiom",
-    logo: "http://flash-clip.vercel.app/patrocinadores/Axiom.jpeg",
+    logo: "http://flash-clip.vercel.app/patrocinadores/Axiom_1.jpeg",
     description: "Uma loja para criação e venda de artigos 3D! Além de brinquedos, decoração e utilidades.",
     tier: "bronze",
     socialMedia: {}
