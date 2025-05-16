@@ -40,12 +40,12 @@ const gid = '179122432';
       'https://docs.google.com/spreadsheets/d/e/2PACX-1vROsUV2SU4TSAu-VnEet3YFjAuHz1ZnM-09euJYTjQjBcDaQ4Vw0uRZf1lH1ASYJis-vviSdzJ0aOPy/pub?gid=1427899878&single=true&output=csv';
     const res = await fetch(link);
     const text = await res.text();
-    console.log('TEXTO',text);
+   
 
   
     // quebra por cada linha que COMEÇA com uma data no formato dd/mm/aaaa
     const blocks = text.split(/(?=\d{2}\/\d{2}\/\d{4})/g).slice(1);
-    console.log('BLOCOS',blocks);
+   
 
     const instrutores = blocks.map((block, index) => {
       const [data, name, expertise, bio,email, github, instagram, linkedin, image] = block.trim().split(',');
@@ -64,7 +64,7 @@ const gid = '179122432';
         }
       };
     });
-    console.log(instrutores);
+  
     
   
     return instrutores;

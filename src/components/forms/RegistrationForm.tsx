@@ -142,7 +142,7 @@ const RegistrationForm = () => {
           'Content-Type': 'application/x-www-form-urlencoded'
         },
         body: data.toString()
-      }).then(console.log).catch()
+      }).then().catch()
       toast.message("Inscrição enviada!")
       form.reset();
       setIsSucesso(true)
