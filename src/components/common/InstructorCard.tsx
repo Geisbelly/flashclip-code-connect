@@ -40,7 +40,7 @@ const InstructorCard: React.FC<InstructorCardProps> = ({ instructor }) => {
   const handleImageError = () => {
     setImageError(true);
   };
-  console.log(instructor.image);
+  
   return (
     <Card className="flex flex-col overflow-hidden border-white/10 bg-tech-blue-light/30 backdrop-blur-sm hover:border-tech-neon/30 transition-all">
       <div className="relative">
