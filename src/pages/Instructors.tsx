@@ -8,12 +8,9 @@ import { getInstrutores } from '@/lib/googleServices';
 
 
 const Instructors = () => {
-  const [instructorsData, setInstructorsData] = useState([]);
-
-  
+  const [instructorsData, setInstructorsData] = useState([]); 
 
   useEffect(()=>{
-    
     
     async function buscarInstrutores() {
       const dados = await getInstrutores()
