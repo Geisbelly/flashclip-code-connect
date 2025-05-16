@@ -66,33 +66,33 @@ const RegistrationForm = () => {
 
 
    
-  async function emailJaCadastrado(email: string): Promise<boolean> {
-    const dados = await fetchSheetCSV();
+ // async function emailJaCadastrado(email: string): Promise<boolean> {
+    //const dados = await fetchSheetCSV();
   
     // Ignorar as 4 primeiras linhas de metadados
-    const linhasValidas = dados.slice(3);
+    //const linhasValidas = dados.slice(3);
   
     // Índice do campo "E-mail" (coluna 1)
-    for (const linha of linhasValidas) {
-      if (linha[1]?.trim().toLowerCase() === email.trim().toLowerCase()) {
-        return true;
-      }
-    }
+  //   for (const linha of linhasValidas) {
+  //     if (linha[1]?.trim().toLowerCase() === email.trim().toLowerCase()) {
+  //       return true;
+  //     }
+  //   }
   
-    return false;
-  }
+  //   return false;
+  // }
   
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try{
       setIsSubmitting(true)
-      const existe = await emailJaCadastrado(values.email)
+      //const existe = await emailJaCadastrado(values.email)
      
-      if(existe){
-        toast.message("Você não pode se cadastrar duas vocês com o mesmo email!")
-        setIsSubmitting(false)
-        return
-      }
+      // if(existe){
+      //   toast.message("Você não pode se cadastrar duas vocês com o mesmo email!")
+      //   setIsSubmitting(false)
+      //   return
+      // }
       const formUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSd11jX94D_SORUkxWZ6j_4kH2vCK2NmJYua-L_MKxsQUFjCeg/formResponse';
       
       const data = new URLSearchParams();
