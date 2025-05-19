@@ -20,7 +20,7 @@ const SponsorCard: React.FC<SponsorCardProps> = ({ sponsor }) => {
   return (
     <Card className={`bg-tech-blue-light/30 backdrop-blur-sm border-2 ${tierColors[sponsor.tier]} hover:shadow-lg transition-all duration-300`}>
       <CardHeader>
-        <div className="h-52 w-full overflow-hidden rounded-lg mb-4">
+        <div className="h-[260px] w-full overflow-hidden rounded-lg mb-4">
           <img 
             src={sponsor.logo} 
             alt={`${sponsor.name} logo`}

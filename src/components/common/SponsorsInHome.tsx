@@ -2,7 +2,7 @@ import { sponsorsData } from "@/data/sponsors";
 
 const SponsorsInHome = () => {
   return (
-    <section className="py-16 bg-tech-blue-light/20">
+    <section className="py-16 bg-tech-blue-light/15">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl font-bold mb-12 font-code">
           <span className="text-white">Nossos </span>
@@ -10,7 +10,7 @@ const SponsorsInHome = () => {
         </h2>
 
         <div className="flex flex-wrap justify-center items-center gap-12">
-          {sponsorsData.filter((sponsor) => sponsor.tier === "silver" || sponsor.tier === "diamond")
+          {sponsorsData.filter((sponsor) => sponsor.tier === "silver" || sponsor.tier === "diamond" || sponsor.tier ==='bronze')
             .map((sponsor) => (
                 <a
                     key={sponsor.id}
@@ -19,12 +19,12 @@ const SponsorsInHome = () => {
                     rel="noopener noreferrer"
                     className="group transition-transform duration-300 hover:scale-105"
                 >
-              <div className="rounded-full h-20 w-20 bg-tech-blue-light/30 backdrop-blur-sm flex items-center justify-center transition-shadow duration-300 group-hover:shadow-[0_0_20px_5px_rgba(0,210,255,0.7)]">
+              <div className="rounded-full h-24 w-24 bg-tech-blue-light/30 backdrop-blur-sm flex items-center justify-center transition-shadow duration-300 group-hover:shadow-[0_0_20px_5px_rgba(0,210,255,0.7)]">
                 <img
                     src={sponsor.logo}
                     alt={sponsor.name}
                     title={sponsor.name}
-                    className="max-h-12 max-w-12 object-contain"
+                    className="max-h-20 max-w-20 object-contain"
                 />
                 </div>
             </a>

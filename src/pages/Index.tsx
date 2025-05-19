@@ -53,7 +53,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* <SponsorsInHome /> */}
+      <SponsorsInHome />
       
       {/* Features */}
       <section className="py-20 bg-tech-blue-light/10">
