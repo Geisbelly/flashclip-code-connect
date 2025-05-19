@@ -25,7 +25,7 @@ export const faqData: FAQItem[] = [
   {
     id: "faq5",
     question: "Posso cancelar minha inscrição?",
-    answer: "Sim, você pode cancelar sua inscrição até 7 dias antes do início do evento. Para isso, entre em contato através do email contato@flashclip.tech informando seu nome completo e curso escolhido."
+    answer: "Sim, você pode cancelar sua inscrição até 7 dias antes do início do evento. Para isso, entre em contato através do email contatoflashclip@gmail.com informando seu nome completo e curso escolhido."
   },
   {
     id: "faq6",
