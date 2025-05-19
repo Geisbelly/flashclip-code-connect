@@ -23,6 +23,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { toast } from "sonner";
 import fetchSheetCSV from '@/lib/googleServices'
 import { CheckCircle } from "lucide-react";
+import InputMask from 'react-input-mask';
 
 const formSchema = z.object({
   fullName: z.string().min(2, { message: "O nome deve ter pelo menos 2 caracteres." }),
@@ -185,6 +186,9 @@ const RegistrationForm = () => {
                     placeholder="seu.email@exemplo.com" 
                     {...field} 
                     className="bg-tech-blue-light/30 border-white/10 text-white placeholder:text-white/50 focus:border-tech-neon"
+                     onChange={(e) =>
+                        field.onChange(e.target.value.trim().toLowerCase())
+                      }
                   />
                 </FormControl>
                 <FormMessage />
@@ -200,11 +204,22 @@ const RegistrationForm = () => {
               <FormItem>
                 <FormLabel className="text-white">Telefone *</FormLabel>
                 <FormControl>
-                  <Input 
-                    placeholder="(63) 90000-0000" 
+                  <InputMask 
+                    placeholder="(63) 90000-0000"
+                    mask="(99) 99999-9999"
+                    maskChar="" 
+                    value={field.value}
+                    onChange={field.onChange}
                     {...field} 
-                    className="bg-tech-blue-light/30 border-white/10 text-white placeholder:text-white/50 focus:border-tech-neon"
-                  />
+                    
+                  >
+                   {(inputProps: React.InputHTMLAttributes<HTMLInputElement>) => (
+                      <Input
+                        {...inputProps}
+                        className="bg-tech-blue-light/30 border-white/10 text-white placeholder:text-white/50 focus:border-tech-neon"
+                      />
+                    )}
+                  </InputMask>
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -334,7 +349,7 @@ const RegistrationForm = () => {
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
                   <SelectTrigger className="bg-tech-blue-light/30 border-white/10 text-white">
-                    <SelectValue placeholder="Selecione uma instituição" />
+                    <SelectValue placeholder="Selecione quem te convidou" />
                   </SelectTrigger>
                 </FormControl>
                 <SelectContent className="bg-tech-blue-light border-white/10">
@@ -382,7 +397,7 @@ const RegistrationForm = () => {
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
                   <SelectTrigger className="bg-tech-blue-light/30 border-white/10 text-white">
-                    <SelectValue placeholder="Selecione uma instituição" />
+                    <SelectValue placeholder="Selecione por quem você ficou sabendo do Evento" />
                   </SelectTrigger>
                 </FormControl>
                 <SelectContent className="bg-tech-blue-light border-white/10">
