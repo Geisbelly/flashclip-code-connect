@@ -19,7 +19,7 @@ export const sponsorsData: SponsorProps[] = [
   {
     id: "s1",
     name: "Axiom",
-    logo: "http://flash-clip.vercel.app/patrocinadores/Axiom_1.jpeg",
+    logo: "http://flash-clip.vercel.app/patrocinadores/Axiom.png",
     description: "Uma loja para criação e venda de artigos 3D! Além de brinquedos, decoração e utilidades.",
     tier: "bronze",
     socialMedia: {}
@@ -27,7 +27,7 @@ export const sponsorsData: SponsorProps[] = [
   {
     id: "s2",
     name: "CicloPalmas",
-    logo: "https://dcdn-us.mitiendanube.com/stores/005/037/006/themes/common/logo-958559295-1744309486-dd288b8de47ed140ad3f85883632cee61744309486.png?0",
+    logo: "http://flash-clip.vercel.app/patrocinadores/cicloPalmas",
     description: "A 25 anos entregando aos lojistas peças e acessórios para bicicletas e motos, em todo o estado do Tocantins e Estados vizinhos.",
     tier: "bronze",
     website: "https://ciclopalmas.com.br/",
