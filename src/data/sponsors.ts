@@ -3,7 +3,7 @@ export interface SponsorProps {
   id: string;
   name: string;
   logo: string;
-  description: string;
+  description?: string;
   tier: 'diamond' | 'silver' | 'bronze';
   website?: string;
   socialMedia: {
@@ -34,8 +34,39 @@ export const sponsorsData: SponsorProps[] = [
     socialMedia: {
       facebook: "https://www.facebook.com/Ciclopalmas/",
       instagram: "https://www.instagram.com/ciclopalmas",
-    }
+    },
   },
+    {
+      id: "s3",
+      name: "ABIA Corretora de Seguros",
+      logo: "public/patrocinadores/abia.png",
+      description: "Nossa missão é encontrar o seguro certo a um menor custo e com as melhores condições de pagamento.",
+      tier: "bronze",
+      website: "https://abiacorretora.com.br/",
+      socialMedia: {
+        instagram: "https://www.instagram.com/abiacorretoradeseguros/",
+      },
+    },
+    {
+      id: "s4",
+      name: "PontoFibra",
+      logo: "public/patrocinadores/pontofibra.png",
+      description: "Estamos aqui para proporcionar a você uma experiência personalizada e eficiente!",
+      tier: "bronze",
+      website: "https://pontofibra.com.br/",
+      socialMedia: {
+        instagram: "https://www.instagram.com/pontofibra/",
+      },
+    },
+    {
+      id: "s5",
+      name: "Inegresis",
+      logo: "public/patrocinadores/integresis.png",
+      tier: "bronze",
+      socialMedia: {
+        instagram: "https://www.instagram.com/integresis/",
+      },
+    },
   // {
   //   id: "s3",
   //   name: "CRP Tecnologia",

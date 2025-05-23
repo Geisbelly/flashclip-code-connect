@@ -10,7 +10,7 @@ const SponsorsInHome = () => {
         </h2>
 
         <div className="flex flex-wrap justify-center items-center gap-12">
-          {sponsorsData.filter((sponsor) => sponsor.tier === "silver" || sponsor.tier === "diamond" || sponsor.tier ==='bronze')
+          {sponsorsData.filter((sponsor) => sponsor.tier === "silver" || sponsor.tier === "diamond" || sponsor.tier ==='bronze' || sponsor.tier ==='gold')
             .map((sponsor) => (
                 <a
                     key={sponsor.id}
