@@ -447,7 +447,7 @@ const RegistrationForm = () => {
                 </FormControl>
                 <SelectContent className="bg-tech-blue-light border-white/10">
                   <SelectItem value="Prolog">Prolog</SelectItem>
-                  <SelectItem value="C#">C#</SelectItem>
+                  {/* <SelectItem value="C#">C#</SelectItem> */}
                   <SelectItem value="Ruby">Ruby</SelectItem>
                   <SelectItem value="Go">GO</SelectItem>
                   <SelectItem value="Typescript">TypeScript</SelectItem>
