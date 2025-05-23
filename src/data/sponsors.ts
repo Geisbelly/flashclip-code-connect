@@ -21,6 +21,7 @@ export const sponsorsData: SponsorProps[] = [
     name: "Axiom",
     logo: "http://flash-clip.vercel.app/patrocinadores/Axiom.png",
     description: "Uma loja para criação e venda de artigos 3D! Além de brinquedos, decoração e utilidades.",
+    website: "https://www.instagram.com/_axiom_3d/",
     tier: "silver",
     socialMedia: {
       instagram:"https://www.instagram.com/_axiom_3d/",
@@ -66,6 +67,7 @@ export const sponsorsData: SponsorProps[] = [
       logo: "http://flash-clip.vercel.app/patrocinadores/integresis.png",
       description:"Aqui é o lugar que procura soluções em impressões nos mais diversos formatos e tipos de materiais.",
       tier: "bronze",
+      website: "https://www.instagram.com/integresis/",
       socialMedia: {
         instagram: "https://www.instagram.com/integresis/",
         facebook:"https://www.facebook.com/Integresis/?locale=pt_BR"
