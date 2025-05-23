@@ -52,7 +52,7 @@ export const sponsorsData: SponsorProps[] = [
       name: "ProntoFibra",
       logo: "http://flash-clip.vercel.app/patrocinadores/prontofibra.png",
       description: "Confira nossos planos disponíveis e descubra a melhor opção para suas necessidades. Estamos aqui para proporcionar a você uma experiência personalizada e eficiente!",
-      tier: "bronze",
+      tier: "silver",
       website: "https://prontofibra.com.br/",
       socialMedia: {
         instagram: "https://www.instagram.com/prontofibra/",
