@@ -76,7 +76,7 @@ export const sponsorsData: SponsorProps[] = [
   {
     id: "s6",
     name: "CRP Tecnologia",
-    logo: "https://images.unsplash.com/photo-1560179707-f14e90ef3603?q=80&w=1374&auto=format&fit=crop",
+    logo: "http://flash-clip.vercel.app/patrocinadores/crp.png",
     description: "Nossa missão é criar, de forma dinâmica e sustentável, recursos inovadores que tornem as empresas e o mundo cada dia melhor.",
     tier: "bronze",
     website: "https://crptecnologia.com.br/",
