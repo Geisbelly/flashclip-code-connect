@@ -73,18 +73,18 @@ export const sponsorsData: SponsorProps[] = [
         facebook:"https://www.facebook.com/Integresis/?locale=pt_BR"
       },
     },
-  // {
-  //   id: "s3",
-  //   name: "CRP Tecnologia",
-  //   logo: "https://images.unsplash.com/photo-1560179707-f14e90ef3603?q=80&w=1374&auto=format&fit=crop",
-  //   description: "Nossa missão é criar, de forma dinâmica e sustentável, recursos inovadores que tornem as empresas e o mundo cada dia melhor.",
-  //   tier: "gold",
-  //   website: "https://crptecnologia.com.br/",
-  //   socialMedia: {
-  //     instagram: "https://www.instagram.com/crptecnologia/",
-  //     facebook: "https://www.facebook.com/crptecnologia/?locale=pt_BR"
-  //   }
-  // },
+  {
+    id: "s6",
+    name: "CRP Tecnologia",
+    logo: "https://images.unsplash.com/photo-1560179707-f14e90ef3603?q=80&w=1374&auto=format&fit=crop",
+    description: "Nossa missão é criar, de forma dinâmica e sustentável, recursos inovadores que tornem as empresas e o mundo cada dia melhor.",
+    tier: "bronze",
+    website: "https://crptecnologia.com.br/",
+    socialMedia: {
+      instagram: "https://www.instagram.com/crptecnologia/",
+      facebook: "https://www.facebook.com/crptecnologia/?locale=pt_BR"
+    }
+  },
   // {
   //   id: "s4",
   //   name: "SENAC",
