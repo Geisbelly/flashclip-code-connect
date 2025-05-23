@@ -55,7 +55,6 @@ const CourseDetail = () => {
     const foundCourse = coursesData.find((c) => c.id === id);
     setCourse(foundCourse || null);
 
-    console.log(foundCourse);
     
 
     if (foundCourse) {

@@ -62,9 +62,11 @@ export const sponsorsData: SponsorProps[] = [
       id: "s5",
       name: "Inegresis",
       logo: "http://flash-clip.vercel.app/patrocinadores/integresis.png",
+      description:"Aqui é o lugar que procura soluções em impressões nos mais diversos formatos e tipos de materiais.",
       tier: "bronze",
       socialMedia: {
         instagram: "https://www.instagram.com/integresis/",
+        facebook:"https://www.facebook.com/Integresis/?locale=pt_BR"
       },
     },
   // {
