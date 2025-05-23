@@ -39,7 +39,7 @@ export const sponsorsData: SponsorProps[] = [
     {
       id: "s3",
       name: "ABIA Corretora de Seguros",
-      logo: "public/patrocinadores/abia.png",
+      logo: "http://flash-clip.vercel.app/patrocinadores/abia.png",
       description: "Nossa missão é encontrar o seguro certo a um menor custo e com as melhores condições de pagamento.",
       tier: "bronze",
       website: "https://abiacorretora.com.br/",
@@ -50,7 +50,7 @@ export const sponsorsData: SponsorProps[] = [
     {
       id: "s4",
       name: "PontoFibra",
-      logo: "public/patrocinadores/pontofibra.png",
+      logo: "http://flash-clip.vercel.app/patrocinadores/pontofibra.png",
       description: "Estamos aqui para proporcionar a você uma experiência personalizada e eficiente!",
       tier: "bronze",
       website: "https://pontofibra.com.br/",
@@ -61,7 +61,7 @@ export const sponsorsData: SponsorProps[] = [
     {
       id: "s5",
       name: "Inegresis",
-      logo: "public/patrocinadores/integresis.png",
+      logo: "http://flash-clip.vercel.app/patrocinadores/integresis.png",
       tier: "bronze",
       socialMedia: {
         instagram: "https://www.instagram.com/integresis/",
