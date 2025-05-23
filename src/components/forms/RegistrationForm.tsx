@@ -57,7 +57,7 @@ const RegistrationForm = () => {
       course: "",
       indicacao: "",
       meio: "",
-      miniCourse: "",
+      miniCourse: "Cursos fechados: C#",
       customCourse: "",
       customInstitution: "",
       customMeio: "",
