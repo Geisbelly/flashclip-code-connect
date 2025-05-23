@@ -49,13 +49,13 @@ export const sponsorsData: SponsorProps[] = [
     },
     {
       id: "s4",
-      name: "PontoFibra",
-      logo: "http://flash-clip.vercel.app/patrocinadores/pontofibra.png",
+      name: "ProntoFibra",
+      logo: "http://flash-clip.vercel.app/patrocinadores/prontofibra.png",
       description: "Estamos aqui para proporcionar a você uma experiência personalizada e eficiente!",
       tier: "bronze",
-      website: "https://pontofibra.com.br/",
+      website: "https://prontofibra.com.br/",
       socialMedia: {
-        instagram: "https://www.instagram.com/pontofibra/",
+        instagram: "https://www.instagram.com/prontofibra/",
       },
     },
     {
