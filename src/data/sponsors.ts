@@ -12,10 +12,23 @@ export interface SponsorProps {
     instagram?: string;
     linkedin?: string;
     youtube?: string;
+    whatsapp?:string;
   };
 }
 
 export const sponsorsData: SponsorProps[] = [
+  {
+    id: "s1",
+    name: "Atacadão dos Preços Baixos",
+    logo: "http://flash-clip.vercel.app/patrocinadores/atacadao.png",
+    description: "No Atacadão dos Preços Baixos, economia de verdade anda lado a lado com qualidade e confiança. Aqui, você encontra tudo o que precisa para o seu dia a dia com preços que cabem no seu bolso.",
+    tier: "diamond",
+    website: "https://linktr.ee/Atacadaodosprecosbaixo",
+    socialMedia: {
+      instagram: "https://www.instagram.com/oatacadaodosprecosbaixos/",
+      whatsapp: "https://www.whatsapp.com/channel/0029Vb5llogKmCPZaCp5SG0x"
+    }
+  },
   {
     id: "s2",
     name: "Axiom",
@@ -26,6 +39,17 @@ export const sponsorsData: SponsorProps[] = [
     socialMedia: {
       instagram:"https://www.instagram.com/_axiom_3d/",
     }
+  },
+  {
+    id: "s5",
+    name: "ProntoFibra",
+    logo: "http://flash-clip.vercel.app/patrocinadores/prontofibra.png",
+    description: "Confira nossos planos disponíveis e descubra a melhor opção para suas necessidades. Estamos aqui para proporcionar a você uma experiência personalizada e eficiente!",
+    tier: "silver",
+    website: "https://prontofibra.com.br/",
+    socialMedia: {
+      instagram: "https://www.instagram.com/prontofibra/",
+    },
   },
   {
     id: "s3",
@@ -51,17 +75,6 @@ export const sponsorsData: SponsorProps[] = [
       },
     },
     {
-      id: "s5",
-      name: "ProntoFibra",
-      logo: "http://flash-clip.vercel.app/patrocinadores/prontofibra.png",
-      description: "Confira nossos planos disponíveis e descubra a melhor opção para suas necessidades. Estamos aqui para proporcionar a você uma experiência personalizada e eficiente!",
-      tier: "silver",
-      website: "https://prontofibra.com.br/",
-      socialMedia: {
-        instagram: "https://www.instagram.com/prontofibra/",
-      },
-    },
-    {
       id: "s6",
       name: "IntegreSiS",
       logo: "http://flash-clip.vercel.app/patrocinadores/integresis.png",
@@ -83,18 +96,6 @@ export const sponsorsData: SponsorProps[] = [
     socialMedia: {
       instagram: "https://www.instagram.com/crptecnologia/",
       facebook: "https://www.facebook.com/crptecnologia/?locale=pt_BR"
-    }
-  },
-  {
-    id: "s1",
-    name: "Atacadão dos Preços Baixos",
-    logo: "http://flash-clip.vercel.app/patrocinadores/atacadao.png",
-    description: "No Atacadão dos Preços Baixos, economia de verdade anda lado a lado com qualidade e confiança. Aqui, você encontra tudo o que precisa para o seu dia a dia com preços que cabem no seu bolso.",
-    tier: "diamond",
-    website: "https://linktr.ee/Atacadaodosprecosbaixo",
-    socialMedia: {
-      instagram: "https://www.instagram.com/oatacadaodosprecosbaixos/",
-      facebook: "https://www.whatsapp.com/channel/0029Vb5llogKmCPZaCp5SG0x"
     }
   },
   {

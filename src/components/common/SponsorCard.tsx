@@ -1,7 +1,7 @@
 
 //import React from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Twitter, Youtube, Phone, PhoneCall } from "lucide-react";
 import { SponsorProps } from '@/data/sponsors';
 import { Button } from '../ui/button';
 
@@ -66,6 +66,11 @@ const SponsorCard: React.FC<SponsorCardProps> = ({ sponsor }) => {
           {sponsor.socialMedia.youtube && (
             <a href={sponsor.socialMedia.youtube} target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-tech-neon transition-colors">
               <Youtube size={18} />
+            </a>
+          )}
+          {sponsor.socialMedia.whatsapp && (
+            <a href={sponsor.socialMedia.whatsapp} target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-tech-neon transition-colors">
+              <Phone size={18} />
             </a>
           )}
         </div>
