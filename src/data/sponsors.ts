@@ -52,6 +52,18 @@ export const sponsorsData: SponsorProps[] = [
     },
   },
   {
+    id: "s7",
+    name: "CRP Tecnologia",
+    logo: "http://flash-clip.vercel.app/patrocinadores/crp.png",
+    description: "Nossa missão é criar, de forma dinâmica e sustentável, recursos inovadores que tornem as empresas e o mundo cada dia melhor.",
+    tier: "silver",
+    website: "https://crptecnologia.com.br/",
+    socialMedia: {
+      instagram: "https://www.instagram.com/crptecnologia/",
+      facebook: "https://www.facebook.com/crptecnologia/?locale=pt_BR"
+    }
+  },
+  {
     id: "s3",
     name: "CicloPalmas",
     logo: "http://flash-clip.vercel.app/patrocinadores/cicloPalmas.png",
@@ -86,18 +98,6 @@ export const sponsorsData: SponsorProps[] = [
         facebook:"https://www.facebook.com/Integresis/?locale=pt_BR"
       },
     },
-  {
-    id: "s7",
-    name: "CRP Tecnologia",
-    logo: "http://flash-clip.vercel.app/patrocinadores/crp.png",
-    description: "Nossa missão é criar, de forma dinâmica e sustentável, recursos inovadores que tornem as empresas e o mundo cada dia melhor.",
-    tier: "bronze",
-    website: "https://crptecnologia.com.br/",
-    socialMedia: {
-      instagram: "https://www.instagram.com/crptecnologia/",
-      facebook: "https://www.facebook.com/crptecnologia/?locale=pt_BR"
-    }
-  },
   {
     id: "s8",
     name: "LC Distribuição",
