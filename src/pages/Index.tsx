@@ -47,7 +47,7 @@ const Index = () => {
             </div>
             
             <div className="mt-12 text-white/50 animate-fade-in" style={{ animationDelay: "0.8s" }}>
-              <p>Local: {eventInfo.location}</p>
+              <p>Local: {eventInfo.location} 07/06 às 14h</p>
             </div>
           </div>
         </div>
