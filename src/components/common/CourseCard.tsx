@@ -71,17 +71,7 @@ const CourseCard: React.FC<CourseCardProps> = ({ course, featured = false }) => 
               </div>
             </div>
           )}
-          <div className="pt-3">
-              <p className="text-xs text-white/50 mb-2">Local:</p>
-              <div className="flex flex-wrap gap-1">
-                  <Badge key={course.sala} variant="outline" className="text-xs bg-tech-blue border-white/10">
-                    {course.sala}
-                  </Badge>
-                  <Badge key={course.labin} variant="outline" className="text-xs bg-tech-blue border-white/10">
-                    {course.labin}
-                  </Badge>
-              </div>
-            </div>
+         
         </div>
       </CardContent>
       <CardFooter className="mt-auto">

@@ -10,7 +10,7 @@ export const scheduleData: ScheduleItemProps[] = [
     date: "2025-06-07",
     startTime: "14:00",
     endTime: "17:00",
-    location: "Ainda não definido",
+    location: "Sala 712 - Labin 6",
     isVirtual: false,
     instructor: ["Mota","Arthur A.","David","Sávio","Arthur T.", "Lucas"]
   },
@@ -21,7 +21,7 @@ export const scheduleData: ScheduleItemProps[] = [
     date: "2025-06-07",
     startTime: "14:00",
     endTime: "17:00",
-    location: "Ainda não definido",
+    location: "Sala 702 - Labin 2",
     isVirtual: false,
     instructor: ["Eduardo S.","Adeulvado","Samuel","Pedro"],
   },
@@ -32,7 +32,7 @@ export const scheduleData: ScheduleItemProps[] = [
     date: "2025-06-07",
     startTime: "14:00",
     endTime: "17:00",
-    location: "Ainda não definido",
+    location: "Sala 703 - Labin 1",
     isVirtual: false,
     instructor: ["Anne","Victor T.","Pedro","Jonathan","Kauã", "Carlos"]
   },
@@ -43,7 +43,7 @@ export const scheduleData: ScheduleItemProps[] = [
     date: "2025-06-07",
     startTime: "14:00",
     endTime: "17:00",
-    location: "Ainda não definido",
+    location: "Sala 719 - Labin 11",
     isVirtual: false,
     instructor: ["Julia","Ítalo","Sergio","Hugo","Regis","Victor da M."]
   },
@@ -54,7 +54,7 @@ export const scheduleData: ScheduleItemProps[] = [
     date: "2025-06-07",
     startTime: "14:00",
     endTime: "17:00",
-    location: "Ainda não definido",
+    location: "Sala 710 - Labin 5",
     isVirtual: false,
     instructor: ["Geisbelly", "Levi Luz", "Maria Antônia", "Bruno"]
   }
