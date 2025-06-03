@@ -10,7 +10,9 @@ export const coursesData: CourseProps[] = [
     level: "Introdução",
     hours: 3,
     instructor: ["Geisbelly", "Levi Luz", "Maria Antônia", "Bruno"],
-    prerequisites: ["Nenhum"]
+    prerequisites: ["Nenhum"],
+    sala: 'Sala 710',
+    labin: 'Labin 5'
   },
   {
     id: "csharp",
@@ -20,7 +22,9 @@ export const coursesData: CourseProps[] = [
     level: "Introdução",
     hours: 3,
     instructor: ["Mota", "Arthur A.", "David", "Sávio", "Arthur T.", "Lucas"],
-    prerequisites: ["Nenhum"]
+    prerequisites: ["Nenhum"],
+    sala: 'Sala 712',
+    labin: 'Labin 6'
   },
   {
     id: "typescript",
@@ -30,7 +34,9 @@ export const coursesData: CourseProps[] = [
     level: "Introdução",
     hours: 3,
     instructor: ["Eduardo S.", "Adeulvado", "Samuel", "Pedro"],
-    prerequisites: ["Nenhum"]
+    prerequisites: ["Nenhum"],
+    sala: 'Sala 702',
+    labin: 'Labin 2'
   },
   {
     id: "go",
@@ -40,7 +46,9 @@ export const coursesData: CourseProps[] = [
     level: "Introdução",
     hours: 3,
     instructor: ["Anne", "Victor T.", "Pedro", "Jonathan", "Kauã", "Carlos"],
-    prerequisites: ["Nenhum"]
+    prerequisites: ["Nenhum"],
+    sala: 'Sala 703',
+    labin: 'Labin 1'
   },
   {
     id: "ruby",
@@ -50,6 +58,8 @@ export const coursesData: CourseProps[] = [
     level: "Introdução",
     hours: 3,
     instructor: ["Julia", "Ítalo", "Sergio", "Hugo", "Regis", "Victor da M."],
-    prerequisites: ["Nenhum"]
+    prerequisites: ["Nenhum"],
+    sala: 'Sala 719',
+    labin: 'Labin 11'
   }
 ];
