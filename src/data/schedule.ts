@@ -49,7 +49,7 @@ export const scheduleData: ScheduleItemProps[] = [
   },
   {
     id: "s9",
-    title: "Prolog – Lógica computacional e IA simbólica",
+    title: "Prolog – Resolução de Enigmas",
     courseId: "prolog",
     date: "2025-06-07",
     startTime: "14:00",
