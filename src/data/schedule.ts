@@ -43,7 +43,7 @@ export const scheduleData: ScheduleItemProps[] = [
     date: "2025-06-07",
     startTime: "14:00",
     endTime: "17:00",
-    location: "Sala 719 - Labin 11",
+    location: "Sala 706 - Labin 4",
     isVirtual: false,
     instructor: ["Julia","Ítalo","Sergio","Hugo","Regis","Victor da M."]
   },
