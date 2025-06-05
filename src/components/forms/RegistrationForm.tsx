@@ -439,9 +439,9 @@ const RegistrationForm = () => {
           render={({ field }) => (
             <FormItem>
               <FormLabel className="text-white">Qual minicurso deseja participar? *</FormLabel>
-              <p className="text-xs text-white/60">
+              {/* <p className="text-xs text-white/60">
                   Cursos com turmas lotadas: Prolog, Go, C# e TypeScript
-                </p>
+                </p> */}
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
                   <SelectTrigger className="bg-tech-blue-light/30 border-white/10 text-white">
@@ -449,11 +449,11 @@ const RegistrationForm = () => {
                   </SelectTrigger>
                 </FormControl>
                 <SelectContent className="bg-tech-blue-light border-white/10">
-                  {/* <SelectItem value="Prolog">Prolog</SelectItem> */}
-                  {/* <SelectItem value="C#">C#</SelectItem> */}
+                  <SelectItem value="Prolog">Prolog</SelectItem>
+                  <SelectItem value="C#">C#</SelectItem>
                   <SelectItem value="Ruby">Ruby</SelectItem>
-                  {/* <SelectItem value="Go">GO</SelectItem> */}
-                  {/* <SelectItem value="Typescript">TypeScript</SelectItem> */}
+                  <SelectItem value="Go">GO</SelectItem>
+                  <SelectItem value="Typescript">TypeScript</SelectItem>
                 </SelectContent>
               </Select>
               <FormMessage />
