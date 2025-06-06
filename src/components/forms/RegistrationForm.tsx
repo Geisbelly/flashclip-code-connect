@@ -46,6 +46,7 @@ const formSchema = z.object({
 const RegistrationForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSucesso, setIsSucesso] = useState(false);
+  const [fechado, setFechado] = useState(true);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -164,6 +165,17 @@ const RegistrationForm = () => {
             <h2 className="text-white text-2xl font-bold">Inscrição confirmada!</h2>
             <p className="text-white/80">
               Você receberá mais informações por email. Fique atento!
+            </p>
+          </div>
+    )
+  }else if(fechado){
+
+    return(
+          <div className="flex flex-col items-center justify-center p-10 text-center space-y-4 bg-tech-blue-light/30 border border-white/10 rounded-lg">
+            <CheckCircle className="w-12 h-12 text-tech-neon" />
+            <h2 className="text-white text-2xl font-bold">Inscrição Finalizadas!</h2>
+            <p className="text-white/80">
+              As inscrições para o evento foram encerradas. Agradecemos o seu interesse e esperamos te ver na próxima edição!
             </p>
           </div>
     )
