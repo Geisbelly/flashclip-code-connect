@@ -46,7 +46,7 @@ const formSchema = z.object({
 const RegistrationForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSucesso, setIsSucesso] = useState(false);
-  const [fechado, setFechado] = useState(true);
+  const [fechado, setFechado] = useState(false);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
